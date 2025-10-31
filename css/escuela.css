@@ -1,0 +1,81 @@
+  body {
+    font-family: sans-serif;
+      margin: 0;
+      color: black;
+      line-height: 1.9; 
+      background-image: url(/img/fondo.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    
+    header {
+        background-color: #1A4210;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: white;
+        text-align:left;
+        padding-left: 2rem;
+        align-items: center;
+    }
+
+.logo-nav {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.1rem;
+        padding-right: 1rem;
+        border-radius: 50%;
+
+    }
+
+.head {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.head p {
+  font-size: 1.2rem;
+}
+
+.content1, .content2, .content3 {
+  background-color: rgba(255, 255, 255, 0.903);
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 900px;
+  font-size: 1.2rem;
+}
+
+main>.content1:hover {
+  transform: scale(1.07);
+  transition: 0.5s;
+  }
+
+  main>.content2:hover {
+  transform: scale(1.07);
+  transition: 0.5s;
+  }
+
+  main>.content3:hover {
+  transform: scale(1.07);
+  transition: 0.5s;
+  }
+
+footer {
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
