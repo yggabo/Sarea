@@ -11,7 +11,26 @@ body {
       margin: 0;                   
       background-attachment: fixed;
     }
-.cabiza {
+     header {
+        background-color: #1A4210;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: white;
+        text-align:left;
+        padding-left: 2rem;
+        align-items: center;
+    }
+.logo-nav {
+        width: 3rem;
+        height: 3rem;
+        padding: 0.1rem;
+        padding-right: 1rem;
+        border-radius: 50%;
+
+    }
+
+.cabeza {
   background-color: #004d40;
   color: white;
   text-align: center;
