@@ -1,0 +1,96 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  background-image: url(/img/partido.jpg);
+  background-size:cover;    
+  height: 90vh;           
+  margin: 0;                   
+  background-attachment: fixed;
+  
+    }
+
+.nav-logo {
+    width: 5rem;
+        height: 5rem;
+        padding: 0.1rem;
+        padding-right: 1rem;
+}
+header {
+        background-color: #1A4210;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: white;
+        text-align:left;
+        padding-left: 2rem;
+        align-items: center;
+    }
+footer {
+      background-color: #49565E;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #E3742C;
+    }
+nav ul li {
+      margin: 0 15px;
+    }
+nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+.bg-container {
+   background-color: rgba(255, 255, 255, 0.85);
+   color: darkolivegreen;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.flex {
+        display: flex;
+    }
+.center {
+        align-items: center;
+        justify-content: center;
+    }
+.f-column {
+        flex-direction: column;
+    }
+.fs-xl {
+    font-size: 3rem;
+}
+.fs-l {
+    font-size: 2rem;
+}
+.fs-m {
+    font-size: 1.5rem;
+}
+.fs-s {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
