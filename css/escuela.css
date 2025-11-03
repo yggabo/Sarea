@@ -12,23 +12,25 @@
 
     
     header {
-        background-color: #1A4210;
+        background-color: #1a4210;
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
         color: white;
         text-align:left;
-        padding-left: 2rem;
+        padding-left: 0.5rem;
         align-items: center;
     }
 
-.logo-nav {
-        width: 3rem;
-        height: 3rem;
-        padding: 0.1rem;
-        padding-right: 1rem;
-        border-radius: 50%;
+    header h2{
+      font-size:2rem;
+    }
 
+  .logo-nav {
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
     }
 
 .head {
@@ -38,40 +40,102 @@
   padding: 2rem;
 }
 
-.head p {
-  font-size: 1.2rem;
+h1 {
+  letter-spacing: 5px;
 }
 
+.head p {
+  font-size: 1.3rem;
+}
+  
 .content1, .content2, .content3 {
-  background-color: rgba(255, 255, 255, 0.903);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 2rem auto;
   padding: 1rem;
   border-radius: 8px;
-  max-width: 900px;
-  font-size: 1.2rem;
+  width: 70%;
+  font-size: 1.1rem;
 }
 
 main>.content1:hover {
   transform: scale(1.07);
-  transition: 0.5s;
+  transition: 1.5s;
   }
 
   main>.content2:hover {
   transform: scale(1.07);
-  transition: 0.5s;
+  transition: 1.5s;
   }
 
   main>.content3:hover {
   transform: scale(1.07);
-  transition: 0.5s;
+  transition: 1.5s;
   }
+
+  @keyframes display {
+        0% {
+          transform: translateX(200px);
+          opacity: 0;
+        }
+        10% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        20% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        30% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(-200px);
+          opacity: 0;
+        }
+      }
+
+  main img {
+        width: 650px;
+        height: 500px;
+        border-radius: 20px;
+        box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.377), 0 1px 20px 0 rgb(255, 255, 255);
+      }
+
+      .pic-ctn {
+        position: relative;
+        width: 75vw;
+        height: 540px;
+        margin-top: 25px;
+      }
+
+      .pic-ctn > img {
+        position: absolute;
+        top: 0;
+        left: calc(50% - 100px);
+        opacity: 0;
+        animation: display 10s infinite;
+      }
+
+      img:nth-child(2) {
+        animation-delay: 2s;
+      }
+      img:nth-child(3) {
+        animation-delay: 4s;
+      }
+      img:nth-child(4) {
+        animation-delay: 6s;
+      }
+      img:nth-child(5) {
+        animation-delay: 8s;
+      }
 
 footer {
   text-align: center;
   background-color: #004d40;
   color: white;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {
