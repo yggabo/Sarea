@@ -26,6 +26,36 @@
         align-items: center;
     }
 
+
+.languages {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 2.5rem;
+}
+
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.lang-btn img {
+  width: 2rem;  
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.lang-btn:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
     footer {
       background-color: #0b1320;
       color: white;
@@ -64,9 +94,10 @@
         transition:transform 0.3s ease;
     }
      nav ul li a:hover {
-        color:#000000;
+        color:#E3742C;
         transform: translateY(8px); 
-        transition:1.5s;
+        transition:1s;
+        background-color: white;
     }
 
     main {
@@ -83,11 +114,13 @@
     h1 {
         font-size: 5rem;
         text-shadow: 0 7px 7px black;
+        margin-bottom: 0;
     }
 
     h3 {
         font-size: 3rem;
         text-shadow: 7px 7px 7px black;
+        margin-top: 0;
     }
 
     .logo-nav {
@@ -113,6 +146,18 @@
     <header>
         <img src="img/logo_verde.png" alt="Logo" class="logo-nav">
         <h2>GERNIKAKO ARBOLA FRONTOIA</h2>
+
+          <div class="languages">
+            <button class="lang-btn" title="Euskera">
+            <img src="img/flag-eus.svg" alt="Euskera">
+            </button>
+            <button class="lang-btn" title="English">
+            <img src="img/flag-eng.png" alt="English">
+            </button>
+            <button class="lang-btn" title="French">
+            <img src="img/flag-fra.png" alt="French">
+            </button>
+
     </header>
 
   <nav>
