@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/registro.css">
-    <title>Maquetado</title>
+    <title>Registro</title>
 </head>
+
 <body>
-    <header>   
-        <nav>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </nav>
+    <header>
+        <img src="/img/logo_verde.png" alt="Logo Gernikako Arbola" class="logo-nav">
+        <h1>GERNIKAKO ARBOLA FRONTOIA</h1>  
     </header>
+        <nav>
+             <ul>
+                 <li><a href="#">Inicio</a></li>
+                 <li><a href="#">Historia</a></li>
+                 <li><a href="#">Partidos</a></li>
+                 <li><a href="#">Liga</a></li>
+                 <li><a href="#">Escuela</a></li>
+                 <li><a href="#">Registro</a></li>
+             </ul>
+        </nav>
 
     <main>
-    
+        <section class="registro-container">
+            <div class="formulario">
+                <h2>Registro de Usuario</h2>
+                <form action="/procesar-registro" method="POST">
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="3"></textarea>
+
+                    <button type="submit">Registrarse</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
-
+        <p>&copy; 2025 Gernikako Arbola Frontoi. Todos los derechos reservados.</p>
     </footer>
-    
 </body>
 </html>
