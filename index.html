@@ -14,6 +14,8 @@
       padding: 0;
     }
 
+/* HEADER: */
+
     header {
         background-color: #1a4210;
         display: flex;
@@ -27,13 +29,25 @@
     }
 
 
+    header h2{
+      font-size:2rem;
+    }
+
+    .logo-header {
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+    }
+
+/*  MENÚ DE IDIOMAS DEL HEADER: */
+
 .languages {
   display: flex;
   gap: 10px;
   margin-left: auto;
   margin-right: 2.5rem;
 }
-
 
 .lang-btn {
   background: none;
@@ -56,12 +70,8 @@
   opacity: 0.8;
 }
 
-    footer {
-      background-color: #0b1320;
-      color: white;
-      text-align: center;
-      padding: 0.1rem;
-    }
+
+/* BARRA DE NAVEGACIÓN (BOTONES) */
 
  nav{
         background-color:#E3742C;
@@ -100,6 +110,8 @@
         background-color: white;
     }
 
+/* SECCIÓN PRINCIPAL: */
+
     main {
         padding: 10em;
         text-align: center;
@@ -123,20 +135,20 @@
         margin-top: 0;
     }
 
-    .logo-nav {
-        width: 4.5rem;
-        height: 4.5rem;
-        padding-right: 1rem;
-        padding-left: 1.5rem;
-    }
-
-    header h2{
-      font-size:2rem;
-    }
-
     .main-logo {
         width: 20rem;
         height: 20rem;
+    }
+
+/* FOOTER: */
+
+    footer {
+      background-color: #0b1320;
+      color: white;
+      text-align: center;
+      padding: 0.7rem;
+      font-size: 0.8rem;
+      height: 4rem;
     }
 
 
@@ -144,8 +156,12 @@
 </head>
 <body>
     <header>
-        <img src="img/logo_verde.png" alt="Logo" class="logo-nav">
+        <img src="img/logo_verde.png" alt="Logo" class="logo-header">
         <h2>GERNIKAKO ARBOLA FRONTOIA</h2>
+
+
+<!-- AQUÍ EMPIEZA EL MENÚ DE IDIOMAS -->
+
 
           <div class="languages">
             <button class="lang-btn" title="Euskera">
@@ -158,7 +174,11 @@
             <img src="img/flag-fra.png" alt="French">
             </button>
 
+<!-- AQUÍ TERMINA EL MENÚ DE IDIOMAS -->
+
     </header>
+
+<!-- AQUÍ EMPIEZA EL MENÚ DE SECCIONES -->
 
   <nav>
     <ul>
@@ -171,6 +191,8 @@
     </ul>
   </nav>
 
+<!-- AQUÍ TERMINA EL MENÚ DE SECCIONES -->
+
   <main>
     <img src="img/logo_color.png" class="main-logo">
     <h1>DEPORTE, HISTORIA Y TRADICIÓN</h1>
@@ -178,7 +200,8 @@
   </main>
 
   <footer>
-      <p>© 2025 SAREA Konsulting Group</p>
+        <p>Página con fines académicos. Se reconoce a los autores de todas las fotografías e imágenes.</p>
+        <p>© 2025 SAREA Konsulting Group</p>
   </footer>
 </body>
 </html>
