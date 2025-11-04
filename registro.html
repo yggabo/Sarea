@@ -14,17 +14,18 @@
     </header>
         <nav>
              <ul>
-                 <li><a href="#">Inicio</a></li>
-                 <li><a href="#">Historia</a></li>
-                 <li><a href="#">Partidos</a></li>
-                 <li><a href="#">Liga</a></li>
-                 <li><a href="#">Escuela</a></li>
-                 <li><a href="#">Registro</a></li>
+                 <li><a href="index.html">Inicio</a></li>
+                 <li><a href="historia.html">Historia</a></li>
+                 <li><a href="partidos.html">Partidos</a></li>
+                 <li><a href="liga.html">Liga</a></li>
+                 <li><a href="escuela.html">Escuela</a></li>
+                 <li><a href="registro.html">Registro</a></li>
              </ul>
         </nav>
 
     <main>
-        <section class="registro-container">
+       
+            <div class="registro-container">
             <div class="formulario">
                 <h2>Registro de Usuario</h2>
                 <form action="/procesar-registro" method="POST">
@@ -36,6 +37,9 @@
 
                     <label for="email">Correo electrónico:</label>
                     <input type="email" id="email" name="email" required>
+                    
+                    <label for="edad">Edad:</label>
+                    <input type="edad" id="edad" name="edad" required>
 
                     <label for="comentario">Comentario:</label>
                     <textarea id="comentario" name="comentario" rows="3"></textarea>
