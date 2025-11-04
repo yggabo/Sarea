@@ -1,15 +1,16 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
   body {
-    font-family: sans-serif;
+      font-family: Montserrat;
       margin: 0;
       color: black;
-      line-height: 1.9; 
+      line-height: 1.5; 
       background-image: url(/img/fondo.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       background-attachment: fixed;
-    }
-
+  }
     
     header {
         background-color: #1a4210;
@@ -19,57 +20,145 @@
         color: white;
         text-align:left;
         padding-left: 0.5rem;
+        padding: 0.3rem;
         align-items: center;
     }
 
-    header h2{
+  header img {
+      width: 30px;
+      height: 15px;
+  }
+
+  header h2{
       font-size:2rem;
+  }
+
+  /*  MENÚ DE IDIOMAS DEL HEADER: */
+
+.languages {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 2.5rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.lang-btn img {
+  width: 2rem;  
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.lang-btn:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+  nav{
+        background-color:#E3742C;
+        width: 100%;
+    }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+      nav ul li {
+        margin: 0 15px;
+        transition: transform 0.3s ease;
+    }
+     nav ul li:hover {
+        transform:translateY(5px);
+    }
+     nav ul li a {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: #E3742C;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        transition:transform 0.3s ease;
+    }
+     nav ul li a:hover {
+        color:#E3742C;
+        transform: translateY(8px); 
+        transition:1s;
+        background-color: white;
     }
 
   .logo-nav {
-        width: 4.5rem;
-        height: 4.5rem;
-        padding-right: 1rem;
-        padding-left: 1.5rem;
-    }
+      width: 4.5rem;
+      height: 4.5rem;
+      padding-right: 1rem;
+      padding-left: 1.5rem;
+  }
 
-.head {
-  background-color: #004d40;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-}
+  .head {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+  }
 
-h1 {
-  letter-spacing: 5px;
-}
+  h1 {
+      letter-spacing: 3px;
+  }
 
-.head p {
-  font-size: 1.3rem;
-}
+  .head p {
+      font-size: 1.2rem;
+  }
   
-.content1, .content2, .content3 {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin: 2rem auto;
-  padding: 1rem;
-  border-radius: 8px;
-  width: 70%;
-  font-size: 1.1rem;
-}
+  .content1, .content2, .content3 {
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 2rem auto;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 70%;
+      font-size: 1.1rem;
+  }
 
-main>.content1:hover {
-  transform: scale(1.07);
-  transition: 1.5s;
+  .content1 img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .content2 img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .content3 img {
+      width: 100px;
+      height: 100px;
+  }
+
+  main>.content1:hover {
+      transform: scale(1.07);
+      transition: 1.5s;
   }
 
   main>.content2:hover {
-  transform: scale(1.07);
-  transition: 1.5s;
+      transform: scale(1.07);
+      transition: 1.5s;
   }
 
   main>.content3:hover {
-  transform: scale(1.07);
-  transition: 1.5s;
+      transform: scale(1.07);
+      transition: 1.5s;
   }
 
   @keyframes display {
@@ -93,53 +182,98 @@ main>.content1:hover {
           transform: translateX(-200px);
           opacity: 0;
         }
-      }
+  }
 
   main img {
         width: 650px;
         height: 500px;
         border-radius: 20px;
-        box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.377), 0 1px 20px 0 rgb(255, 255, 255);
-      }
+  }
 
-      .pic-ctn {
+  .pic-ctn {
         position: relative;
         width: 75vw;
         height: 540px;
         margin-top: 25px;
-      }
+  }
 
-      .pic-ctn > img {
+  .pic-ctn > img {
         position: absolute;
         top: 0;
         left: calc(50% - 100px);
         opacity: 0;
         animation: display 10s infinite;
-      }
-
-      img:nth-child(2) {
-        animation-delay: 2s;
-      }
-      img:nth-child(3) {
-        animation-delay: 4s;
-      }
-      img:nth-child(4) {
-        animation-delay: 6s;
-      }
-      img:nth-child(5) {
-        animation-delay: 8s;
-      }
-
-footer {
-  text-align: center;
-  background-color: #004d40;
-  color: white;
-  padding: 1rem;
-  font-size: 1.2rem;
-}
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.8rem;
   }
-}
+
+  img:nth-child(2) {
+        animation-delay: 2s;
+  }
+  img:nth-child(3) {
+        animation-delay: 4s;
+  }
+  img:nth-child(4) {
+        animation-delay: 6s;
+  }
+  img:nth-child(5) {
+        animation-delay: 8s;
+  }
+
+  footer {
+        text-align: center;
+        background-color: #004d40;
+        color: white;
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+  }
+
+  .politica {
+    width: 300px;
+    height: 180px;
+  }
+
+  .politica h3 {
+    margin-right: 105px;
+  }
+
+    .politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
+      .politica ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+  .contacto h3 {
+    margin-right: 505px;
+  }
+
+    .contacto ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+          .contacto ul li a {
+            color: white;
+  }
+
+    .endfooter {
+      background-color: #043028;
+      color: white;
+      text-align: center;
+      padding: 0.3rem;
+  }
+
+  iframe {
+    border-radius: 5px;
+
+  }
+
+  @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+  }

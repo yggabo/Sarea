@@ -1,0 +1,121 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body {
+      font-family: Montserrat;
+      margin: 0;
+      color: black;
+      line-height: 1.5;
+      background-color: #1a4210;
+  }
+    
+  header {
+      background-color: #1a4210;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      color: white;
+      text-align:left;
+      padding-left: 0.5rem;
+      align-items: center;
+  }
+
+  header img {
+      width: 30px;
+      height: 15px;
+  }
+
+  header h2{
+      font-size:2rem;
+  }
+
+
+  .logo-nav {
+      width: 4.5rem;
+      height: 4.5rem;
+      padding-right: 1rem;
+      padding-left: 1.5rem;
+  }
+
+  .head {
+      background-color: #004d40;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+  }
+
+  h1 {
+      letter-spacing: 3px;
+  }
+
+  .head p {
+      font-size: 1.2rem;
+  }
+  
+  .content1, .content2 {
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 2rem auto;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 70%;
+      font-size: 1.1rem;
+  }
+
+footer {
+        text-align: center;
+        background-color: #004d40;
+        color: white;
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+  }
+
+  .politica {
+    width: 300px;
+    height: 180px;
+  }
+
+  .politica h3 {
+    margin-right: 105px;
+  }
+
+    .politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
+      .politica ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+  .contacto h3 {
+    margin-right: 505px;
+  }
+
+    .contacto ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+          .contacto ul li a {
+            color: white;
+  }
+
+    .endfooter {
+      background-color: #043028;
+      color: white;
+      text-align: center;
+      padding: 0.3rem;
+  }
+
+  iframe {
+    border-radius: 5px;
+
+  }
+
+  @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+  }
