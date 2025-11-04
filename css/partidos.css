@@ -165,6 +165,14 @@ header {
         transition:1s;
         background-color: white;
     }
+    nav ul li a.activo {
+        background-color: white;
+        color: #1A4210;
+        font-weight: bold;
+        position: relative;
+        top: 6px;
+        z-index: 1;
+    }
 
 /* FOOTER: */
 
