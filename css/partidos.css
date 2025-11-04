@@ -11,10 +11,19 @@ body {
   padding: 0;
     }
 
-.button {
-  background-color: #1a4210;
-  padding: 10px;
+/*Botón de subida*/
+.circulo-con-flecha-svg {
+  padding: 15px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: .3s ease;
 }
+
+.circulo-con-flecha-svg:hover {
+  transform: translateY(-3px);
+}
+/* Termina botón de subida*/
 
 .bg-container {
    background-color: rgba(255, 255, 255, 0.85);
