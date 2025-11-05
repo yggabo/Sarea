@@ -1,6 +1,6 @@
 
 
-/* FALTA ORDENAR ESTO */
+/* LAS CLASES ESTÁN LIMPIAS */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -15,72 +15,6 @@ body {
   padding: 0;
     }
 
-.button {
-  background-color: #1a4210;
-  padding: 10px;
-}
-
-.bg-container {
-   background-color: rgba(255, 255, 255, 0.85);
-   color: #1a4210;
-  padding: 1.5rem;
-  margin: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 700px;
-  width: 90%;
-  position: relative;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-container img {
-    height: 25rem;
-    width: 25rem;
-}
-
-/*
-.flex {
-        display: flex;
-    }
-.center {
-        align-items: center;
-        justify-content: center;
-    }
-.f-column {
-        flex-direction: column;
-    }
-.ta-center{
-        text-align: center;
-}
-.line-height{
-    line-height: 2.5;
-}
-.fs-xl {
-    font-size: 3rem;
-}
-.fs-l {
-    font-size: 2rem;
-}
-.fs-m {
-    font-size: 1.7rem;
-}
-.fs-s {
-    font-size: 1.4rem;
-}
-
-*/
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-}
-
 header {
         background-color: #1a4210;
         display: flex;
@@ -93,18 +27,17 @@ header {
         align-items: center;
     }
 
-
-    header h2{
+header h2{
       font-size:2rem;
     }
 
-    .logo-header {
+.logo-header {
         width: 4.5rem;
         height: 4.5rem;
         padding-right: 1rem;
         padding-left: 1.5rem;
     }
-
+    
 /*  MENÚ DE IDIOMAS DEL HEADER: */
 
 .languages {
@@ -135,14 +68,14 @@ header {
   opacity: 0.8;
 }
 
-
 /* BARRA DE NAVEGACIÓN (BOTONES) */
 
- nav{
+  nav{
         background-color:#E3742C;
         width: 100%;
     }
-      nav ul {
+  
+  nav ul {
         list-style: none;
         margin: 0;
         padding: 0rem 0;
@@ -150,14 +83,16 @@ header {
         justify-content: center;
     }
 
-      nav ul li {
+  nav ul li {
         margin: 0 15px;
         transition: transform 0.3s ease;
     }
-     nav ul li:hover {
+  
+  nav ul li:hover {
         transform:translateY(5px);
     }
-     nav ul li a {
+  
+  nav ul li a {
         display: inline-block;
         padding: 0.8rem 2rem;
         background-color: #E3742C;
@@ -168,25 +103,97 @@ header {
         border-radius: 4px;
         transition:transform 0.3s ease;
     }
-     nav ul li a:hover {
+    
+  nav ul li a:hover {
         color:#E3742C;
         transform: translateY(8px); 
         transition:1s;
         background-color: white;
     }
 
-/* FOOTER: */
+/* FORMULARIO DE INSCRIPCIÓN A LIGAS */
 
-    footer {
-      background-color: #0b1320;
-      color: white;
-      text-align: center;
-      padding: 0.7rem;
-      font-size: 0.8rem;
-      height: 4rem;
+  .form-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 
-    .circulo-con-flecha-svg {
+  .white-transp-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: black;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    }
+
+.form-header h2 {
+    font-size: 2.5rem;
+    text-align: center;  
+  }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    height: 25rem;
+    width: 25rem;
+}
+
+/* FORMULARIO: */
+
+form label {
+        display: block;
+        margin-top: 1rem;
+    }
+
+form input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0,6rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+form button {
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0.7rem;
+        background-color: #1A4210;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+
+input{ 
+        width: 100%;            
+        padding: 0.5rem;        
+        border: 1px solid #ccc;  
+        border-radius: 4px;     
+        box-sizing: border-box;  
+        font-size: 1rem; 
+    }
+    
+textarea {
+        resize: none; 
+        width: 100%;    
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; 
+    }
+
+/* FOOTER: */
+
+.circulo-con-flecha-svg {
   padding: 15px;
   position: fixed;
   bottom: 15px;
@@ -198,63 +205,116 @@ header {
   transform: translateY(-3px);
 }
 
-
-
-
-
-
-/* FORMULARIO: /*/
-
-    .registro-container  {
-        max-width: 400px;
-        margin: 23rem auto;
-        padding: 2rem;
-        background-color: white;
-        border-radius:8px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-        position: relative; 
-        top: -12rem;
-    }
-
-
-
-      form label {
-        display: block;
-        margin-top: 1rem;
-    }
-
-      form input {
-        width: 100%;
-        padding: 0.5rem;
-        margin-top: 0,6rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-      form button {
-        margin-top: 1.5rem;
-        width: 100%;
-        padding: 0.7rem;
-        background-color: #1A4210;
+footer {
+        text-align: center;
+        background-color: #004d40;
         color: white;
-        border: none;
-        border-radius: 4px;
-      }
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+  }
 
-          input{ 
-        width: 100%;            
-        padding: 0.5rem;        
-        border: 1px solid #ccc;  
-        border-radius: 4px;     
-        box-sizing: border-box;  
-        font-size: 1rem; 
-    }
+.politica {
+    width: 300px;
+    height: 180px;
+  }
+
+.politica h3 {
+    margin-right: 105px;
+  }
+
+.politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
+.politica ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+.contacto h3 {
+    margin-right: 505px;
+  }
+
+.contacto ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+.contacto ul li a {
+            color: white;
+  }
+
+.endfooter {
+      background-color: #043028;
+      color: white;
+      text-align: center;
+      padding: 0.3rem;
+  }
+
+iframe {
+    border-radius: 5px;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
     
-     textarea {
-        resize: none; 
-        width: 100%;    
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box; 
-    }
+    .ta-center{
+        text-align: center;
+}
+.line-height{
+    line-height: 2.5;
+}
+
+.fs-l {
+    font-size: 2rem;
+}
+.fs-m {
+    font-size: 1.7rem;
+}
+.fs-s {
+    font-size: 1.4rem;
+}
+
+*/
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+
+
