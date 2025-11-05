@@ -58,6 +58,7 @@ body {
 }
 .fs-l {
     font-size: 2rem;
+    text-align: center;
 }
 .fs-m {
     font-size: 1.7rem;
@@ -271,9 +272,7 @@ footer {
           justify-content: center;
           align-items: center;
       
-}      
-            
-            
+}                  
 }
          
 
@@ -307,13 +306,7 @@ footer {
           
 }
 
-.politica h3{
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-         
-}
+
 .contacto {
             flex-direction: column;
             text-align: center;
@@ -327,16 +320,8 @@ footer {
           justify-content: center;
           align-items: center;
 }
-.circulo-con-flecha-svg{
-  margin-right: 0.3rem;
-
-}
-.circulo-con-flecha-svg:hover {
-  position: fixed;
-  padding: 2.5rem;
-  
+.fs-xl {
+  font-size: 8vw;
 }
 
-
-}
-
+  }
