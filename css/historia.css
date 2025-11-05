@@ -102,6 +102,18 @@ nav ul li a:hover {
         transition:1.5s;
         background-color: wheat; /* Fondo color trigo */
     }
+    /*Botón de subida*/
+.circulo-con-flecha-svg {
+  padding: 15px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: .3s ease;
+}
+
+.circulo-con-flecha-svg:hover {
+  transform: translateY(-3px);
+}
 .main {
   background-color: #004d40;
   color: white;
