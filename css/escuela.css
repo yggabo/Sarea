@@ -111,7 +111,7 @@
       background-color: #004d40;
       color: white;
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
   }
 
   h1 {
@@ -119,6 +119,7 @@
   }
 
   .head p {
+    margin-top: -10px;
       font-size: 1.2rem;
   }
   
@@ -131,19 +132,38 @@
       font-size: 1.1rem;
   }
 
-  .content1 img {
-      width: 100px;
-      height: 100px;
+  .content1 .imgcom img {
+      width: 50px;
+      height: 50px;
+      border-radius: 0;
   }
 
-  .content2 img {
-      width: 100px;
-      height: 100px;
+  .imgcom {
+    display: flex;
+    justify-content: right;
+
   }
 
-  .content3 img {
-      width: 100px;
-      height: 100px;
+  .content2 .imgeleccion img {
+      width: 50px;
+      height: 50px;
+      border-radius: 0;
+  }
+
+  .imgeleccion {
+    display: flex;
+    justify-content: right;
+  }
+
+  .content3 .imgniveles img {
+      width: 50px;
+      height: 50px;
+      border-radius: 0;
+  }
+
+  .imgniveles {
+    display: flex;
+    justify-content: right;
   }
 
   main>.content1:hover {
@@ -248,7 +268,7 @@
   }
 
   .contacto h3 {
-    margin-right: 505px;
+    margin-right: 340px;
   }
 
     .contacto ul li {
