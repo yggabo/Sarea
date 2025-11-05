@@ -111,6 +111,15 @@ header h2{
         background-color: white;
     }
 
+   nav ul li a.activo {
+        background-color: white;
+        color: #1A4210;
+        font-weight: bold;
+        position: relative;
+        top: 6px;
+        z-index: 1;
+    }
+
 /* FORMULARIO DE INSCRIPCIÓN A LIGAS */
 
 
@@ -124,7 +133,7 @@ header h2{
 .seleccion-liga {
         display: flex;
         align-items:center;
-        justify-content: center;
+        justify-content:space-around;
         flex-direction: row;
     }
 
@@ -163,11 +172,12 @@ header h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .logo-container img {
-    height: 25rem;
-    width: 25rem;
+    height: 30rem;
+    width: 30rem;
 }
 
 .formulario {
