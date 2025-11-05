@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/registro.css">
-    <title>Registro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/registro.css" />
+  <title>Registro | Gernikako Arbola Frontoi</title>
 </head>
 
 <body>
-    <header>
-        <img src="/img/logo_verde.png" alt="Logo Gernikako Arbola" class="logo-nav">
-        <h1>GERNIKAKO ARBOLA FRONTOIA</h1>  
-    </header>
-        <nav>
-             <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="historia.html">Historia</a></li>
-                 <li><a href="partidos.html">Partidos</a></li>
-                 <li><a href="liga.html">Liga</a></li>
-                 <li><a href="escuela.html">Escuela</a></li>
-                 <li><a href="registro.html">Registro</a></li>
-             </ul>
-        </nav>
+  <header>
 
-    <main>
-       
-            <div class="registro-container">
-            <div class="formulario">
-                <h2>Registro de Usuario</h2>
-                <form action="/procesar-registro" method="POST">
-                    <label for="nombre">Nombre y apellido:</label>
-                    <input type="text" id="nombre" name="nombre" required>
 
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required>
+    <img src="/img/logo_verde.png" alt="Logotipo del Gernikako Arbola Frontoi" class="logo-header" />
+    <h1>GERNIKAKO ARBOLA FRONTOIA</h1>
+    <!-- AQUÍ EMPIEZA EL MENÚ DE IDIOMAS -->
 
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="edad">Edad:</label>
-                    <input type="edad" id="edad" name="edad" required>
 
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" rows="3"></textarea>
+          <div class="languages">
+            <button class="lang-btn" title="Euskera">
+            <img src="img/flag-eus.svg" alt="Euskera">
+            </button>
+            <button class="lang-btn" title="English">
+            <img src="img/flag-eng.png" alt="English">
+            </button>
+            <button class="lang-btn" title="French">
+            <img src="img/flag-fra.png" alt="French">
+            </button>
+  </header>
 
-                    <button type="submit">Registrarse</button>
-                </form>
-            </div>
-        </section>
-    </main>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="historia.html">Historia</a></li>
+      <li><a href="partidos.html">Partidos</a></li>
+      <li><a href="liga.html">Liga</a></li>
+      <li><a href="escuela.html">Escuela</a></li>
+      <li><a href="registro.html" class="activo">Registro</a></li>
+    </ul>
+  </nav>
 
-    <footer>
-        <p>&copy; 2025 Gernikako Arbola Frontoi. Todos los derechos reservados.</p>
-    </footer>
+  <a href="#top" style="text-decoration: none;">
+    <div class="circulo-con-flecha-svg">
+      <svg width="100" height="100">
+        <circle cx="40" cy="40" r="35" stroke="#E3742C" stroke-width="2" fill="#1a4210" />
+        <path d="M 25 40 L 55 40 L 40 25 Z" fill="#E3742C" />
+      </svg>
+    </div>
+  </a>
+
+  <main>
+    <section class="registro-container">
+      <div class="formulario">
+        <h2><u>Únete al club</u></h2>
+        <form action="/procesar-registro" method="POST">
+          <label for="nombre">Nombre y apellido:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" minlength="6" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" min="5" max="120" required />
+
+          <label for="comentario">Comentario:</label>
+          <textarea id="comentario" name="comentario" rows="3"></textarea>
+
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.5381121705665!2d-2.9447249!3d43.2631193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e503004259e4f%3A0xdd63774224e34644!2sEstadio%20de%20San%20Mam%C3%A9s!5e0!3m2!1ses!2ses!4v1730843516478!5m2!1ses!2ses"
+      width="350"
+      height="250"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div class="contacto">
+      <ul> 
+        <h3>Contáctanos</h3>
+        <li>Teléfono: +34 699 99 9999</li>
+        <li>Correo: <a href="mailto:GernikoArbola@gmail.com">GernikoArbola@gmail.com</a></li>
+        <li>Dirección: Rafael Moreno "Pitxitxi", Basurto-Zorroza, 48013 Bilbao, Biscay</li>
+      </ul>
+    </div>
+
+    <div class="politica">
+      <h3>Legalidad</h3>
+      <ul>
+        <li><a href="avisolegal.html">Política de Privacidad</a></li>
+        <li><a href="avisolegal.html">Aviso Legal</a></li>
+        <li><a href="avisolegal.html">Política de Cookies</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="endfooter">
+    <p>© 2025 SAREA Konsulting Group</p>
+  </div>
 </body>
 </html>
