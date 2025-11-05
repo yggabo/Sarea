@@ -1,0 +1,260 @@
+
+
+/* FALTA ORDENAR ESTO */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {  
+  background-image: url(/img/1022alai.webp);
+  background-size:cover;    
+  height: 90vh;           
+  margin: 0;                   
+  background-attachment: fixed;
+  font-family: Montserrat;
+  margin: 0;
+  padding: 0;
+    }
+
+.button {
+  background-color: #1a4210;
+  padding: 10px;
+}
+
+.bg-container {
+   background-color: rgba(255, 255, 255, 0.85);
+   color: #1a4210;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    height: 25rem;
+    width: 25rem;
+}
+
+/*
+.flex {
+        display: flex;
+    }
+.center {
+        align-items: center;
+        justify-content: center;
+    }
+.f-column {
+        flex-direction: column;
+    }
+.ta-center{
+        text-align: center;
+}
+.line-height{
+    line-height: 2.5;
+}
+.fs-xl {
+    font-size: 3rem;
+}
+.fs-l {
+    font-size: 2rem;
+}
+.fs-m {
+    font-size: 1.7rem;
+}
+.fs-s {
+    font-size: 1.4rem;
+}
+
+*/
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+header {
+        background-color: #1a4210;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        color: white;
+        text-align:left;
+        padding-left: 0.5rem;
+        padding: 0.3rem;
+        align-items: center;
+    }
+
+
+    header h2{
+      font-size:2rem;
+    }
+
+    .logo-header {
+        width: 4.5rem;
+        height: 4.5rem;
+        padding-right: 1rem;
+        padding-left: 1.5rem;
+    }
+
+/*  MENÚ DE IDIOMAS DEL HEADER: */
+
+.languages {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 2.5rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.lang-btn img {
+  width: 2rem;  
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.lang-btn:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+
+/* BARRA DE NAVEGACIÓN (BOTONES) */
+
+ nav{
+        background-color:#E3742C;
+        width: 100%;
+    }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0rem 0;
+        display: flex;
+        justify-content: center;
+    }
+
+      nav ul li {
+        margin: 0 15px;
+        transition: transform 0.3s ease;
+    }
+     nav ul li:hover {
+        transform:translateY(5px);
+    }
+     nav ul li a {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: #E3742C;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 4px;
+        transition:transform 0.3s ease;
+    }
+     nav ul li a:hover {
+        color:#E3742C;
+        transform: translateY(8px); 
+        transition:1s;
+        background-color: white;
+    }
+
+/* FOOTER: */
+
+    footer {
+      background-color: #0b1320;
+      color: white;
+      text-align: center;
+      padding: 0.7rem;
+      font-size: 0.8rem;
+      height: 4rem;
+    }
+
+    .circulo-con-flecha-svg {
+  padding: 15px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  transition: .3s ease;
+}
+
+.circulo-con-flecha-svg:hover {
+  transform: translateY(-3px);
+}
+
+
+
+
+
+
+/* FORMULARIO: /*/
+
+    .registro-container  {
+        max-width: 400px;
+        margin: 23rem auto;
+        padding: 2rem;
+        background-color: white;
+        border-radius:8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+        position: relative; 
+        top: -12rem;
+    }
+
+
+
+      form label {
+        display: block;
+        margin-top: 1rem;
+    }
+
+      form input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0,6rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+      form button {
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0.7rem;
+        background-color: #1A4210;
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+
+          input{ 
+        width: 100%;            
+        padding: 0.5rem;        
+        border: 1px solid #ccc;  
+        border-radius: 4px;     
+        box-sizing: border-box;  
+        font-size: 1rem; 
+    }
+    
+     textarea {
+        resize: none; 
+        width: 100%;    
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; 
+    }
