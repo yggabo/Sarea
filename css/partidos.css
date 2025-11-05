@@ -66,11 +66,11 @@ body {
     font-size: 1.4rem;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   header h1 {
     font-size: 1.8rem;
   }
-}
+}*/
 
 header {
         background-color: #1a4210;
@@ -177,10 +177,166 @@ header {
 /* FOOTER: */
 
     footer {
-      background-color: #0b1320;
+        text-align: center;
+        background-color: #004d40;
+        color: white;
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+  }
+
+  .politica {
+    width: 300px;
+    height: 180px;
+  }
+
+  .politica h3 {
+    margin-right: 105px;
+  }
+
+    .politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
+      .politica ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+ /* .contacto h3 {
+    margin-right: 21.25rem;
+  }*/
+
+    .contacto ul li {
+        list-style: none;
+        text-align: left;
+  }
+
+          .contacto ul li a {
+            color: white;
+  }
+
+     .endfooter {
+      background-color: #043028;
       color: white;
       text-align: center;
-      padding: 0.7rem;
-      font-size: 0.8rem;
-      height: 4rem;
-    }
+      padding: 0.3rem;
+  }
+
+    @media (max-width: 834px) {
+  header {
+    flex-direction: column; /* Coloca elementos del header en columna */
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
+  }
+  .bg-container {
+    padding:1.5rem;
+  }
+footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+.politica{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+}
+
+.politica h3{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+         
+}
+.contacto {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+}
+      .endfoot {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+      
+}      
+            
+            
+}
+         
+
+  @media (max-width: 360px) {
+  header {
+    flex-direction: column; 
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column; 
+  }
+  .bg-container {
+    padding:1rem;
+    max-width: 300px;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+.politica{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+}
+
+.politica h3{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+         
+}
+.contacto {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+}      
+
+.endfoot {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+}
+.circulo-con-flecha-svg{
+  margin-right: 0.3rem;
+
+}
+.circulo-con-flecha-svg:hover {
+  position: fixed;
+  padding: 2.5rem;
+  
+}
+
+
+}
+
