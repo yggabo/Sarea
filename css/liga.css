@@ -198,6 +198,7 @@ header h2{
 form label {
         display: block;
         margin-top: 1rem;
+        font-weight: 600;
     }
 
 form input {
