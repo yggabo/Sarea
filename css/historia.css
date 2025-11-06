@@ -102,6 +102,14 @@ nav ul li a:hover {
         transition:1.5s;
         background-color: wheat; /* Fondo color trigo */
     }
+    nav ul li a.activo {
+        background-color: white;
+        color: #1A4210;
+        font-weight: bold;
+        position: relative;
+        top: 6px;
+        z-index: 1;
+    }
     /*Botón de subida*/
 .circulo-con-flecha-svg {
   padding: 15px;
@@ -153,14 +161,129 @@ nav ul li a:hover {
   transform: scale(1.03); /* Zoom leve en imágenes */
 }    
 footer {
-      background-color: #0b1320;
-      color: white;
-      text-align: center;
-      padding: 0.1rem;
-    }
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+  padding: 2rem;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+iframe {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.politica,
+.contacto {
+  max-width: 300px;
+}
+
+.politica h3,
+.contacto h3 {
+  margin-bottom: 0.5rem;
+}
+
+.politica ul,
+.contacto ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.politica ul li a,
+.contacto ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.politica ul li a:hover,
+.contacto ul li a:hover {
+  text-decoration: underline;
+}
+
+.endfooter {
+  background-color: #043028;
+  color: white;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+       /* Menú hamburguesa sin checkbox ni JS */
+#menu-toggle {
+  display: none;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: #E3742C;
+}
+    
 
 /* DISEÑO RESPONSIVO */
-@media (max-width: 768px) {
+@media (max-width: 834px) {
+  header {
+    flex-direction: column; /* Coloca elementos del header en columna */
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
+  }
+  main {
+    padding:1.5rem;
+  }
+     /* Menú hamburguesa sin checkbox ni JS */
+.hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
+}
+
+
+@media (max-width: 360px) {
   header {
     flex-direction: column; /* Coloca elementos del header en columna */
     text-align: center;
