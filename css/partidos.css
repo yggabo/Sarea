@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {  
   background-image: url(/img/partido.jpg);
   background-size:cover;    
@@ -10,20 +11,30 @@ body {
   margin: 0;
   padding: 0;
     }
+/* Botón de subida*/
+.subir {
+  position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+   font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.subir:hover {
+   scroll-behavior: smooth;
+}
 
-/*Botón de subida*/
-.circulo-con-flecha-svg {
+.arrow {
+  height: 2.3rem;
   padding: 15px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  transition: .3s ease;
+  color: #E3742C;
 }
-
-.circulo-con-flecha-svg:hover {
-  transform: translateY(-3px);
-}
-/* Termina botón de subida*/
+/*Termina botón de subida*/
 
 .bg-container {
    background-color: rgba(255, 255, 255, 0.85);
@@ -66,12 +77,6 @@ body {
 .fs-s {
     font-size: 1.4rem;
 }
-
-/*@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.8rem;
-  }
-}*/
 
 header {
         background-color: #1a4210;
@@ -174,6 +179,19 @@ header {
         top: 6px;
         z-index: 1;
     }
+/* Menú hamburguesa*/
+    #menu-toggle {
+  display: none;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: #E3742C;
+}
 
 /* FOOTER: */
 
@@ -206,10 +224,6 @@ header {
         text-align: left;
   }
 
- /* .contacto h3 {
-    margin-right: 21.25rem;
-  }*/
-
     .contacto ul li {
         list-style: none;
         text-align: left;
@@ -226,7 +240,7 @@ header {
       padding: 0.3rem;
   }
 
-    @media (max-width: 834px) {
+ @media only screen and (max-width: 834px) {
   header {
     flex-direction: column; /* Coloca elementos del header en columna */
     text-align: center;
@@ -272,11 +286,51 @@ footer {
           justify-content: center;
           align-items: center;
       
-}                  
+}    
+ .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }              
 }
          
 
-  @media (max-width: 360px) {
+  @media only screen and (max-width: 360px) {
   header {
     flex-direction: column; 
     text-align: center;
@@ -323,5 +377,45 @@ footer {
 .fs-xl {
   font-size: 8vw;
 }
+ .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
 
   }
