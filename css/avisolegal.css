@@ -60,23 +60,27 @@
       font-size: 1.1rem;
   }
 
-footer {
+  footer {
         text-align: center;
         background-color: #004d40;
         color: white;
-        padding: 2rem;
         font-size: 1.2rem;
         display: flex;
+        padding: 1rem;
         justify-content: space-around;
   }
 
+  img {
+    width: 15rem;
+    height: 15rem;
+  }
+
   .politica {
-    width: 300px;
-    height: 180px;
+    width: 20%;
   }
 
   .politica h3 {
-    margin-right: 105px;
+    margin-right: 140px;
   }
 
     .politica ul li a {
@@ -89,20 +93,21 @@ footer {
         text-align: left;
   }
 
+
   .contacto h3 {
-    margin-right: 505px;
+    margin-right: 330px;
   }
 
-    .contacto ul li {
+  .contacto ul li {
         list-style: none;
         text-align: left;
   }
 
-          .contacto ul li a {
+  .contacto ul li a {
             color: white;
   }
-
-    .endfooter {
+/*---------------------------------------*/
+  .endfooter {
       background-color: #043028;
       color: white;
       text-align: center;
@@ -114,8 +119,120 @@ footer {
 
   }
 
-  @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
+  /* ======== tablet hasta 834px ======== */
+@media (max-width: 834px) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
   }
+
+  .logo-nav {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+  }
+
+  .head {
+    padding: 1.5rem;
+  }
+
+  .content1, .content2 {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  ul, ol {
+    padding-left: 1.2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .politica, .contacto {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contacto h3, .politica h3 {
+    margin-right: 0;
+  }
+
+  iframe {
+    width: 90%;
+    height: 250px;
+  }
+
+  .endfooter {
+    font-size: 1rem;
+  }
+}
+
+/* ======== movil 480px ======== */
+@media (max-width: 480px) {
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .head {
+    padding: 1rem;
+  }
+
+  .head h1 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  .head p {
+    font-size: 1rem;
+  }
+
+  .content1, .content2 {
+    width: 95%;
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  ul, ol {
+    padding-left: 1rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    gap: 1rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .endfooter {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

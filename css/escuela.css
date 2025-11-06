@@ -1,40 +1,46 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-  body {
-      font-family: Montserrat;
-      margin: 0;
-      color: black;
-      line-height: 1.5; 
-      background-image: url(/img/fondo.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-  }
-    
-    header {
-        background-color: #1a4210;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-        color: white;
-        text-align:left;
-        padding-left: 0.5rem;
-        padding: 0.3rem;
-        align-items: center;
-    }
-
-  header img {
-      width: 30px;
-      height: 15px;
+body {
+    font-family: Montserrat;
+    margin: 0;
+    color: black;
+    line-height: 1.5; 
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  
+  header {
+      background-color: #1a4210;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      color: white;
+      text-align:left;
+      padding-left: 0.5rem;
+      padding: 0.3rem;
+      align-items: center;
   }
 
-  header h2{
-      font-size:2rem;
-  }
+header img {
+    width: 30px;
+    height: 15px;
+}
 
-  /*  MENÚ DE IDIOMAS DEL HEADER: */
+header h2{
+    font-size:2rem;
+}
 
+.logo-nav {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding-right: 1rem;
+    padding-left: 1.5rem;
+}
+
+/* menu languages */
 .languages {
   display: flex;
   gap: 10px;
@@ -63,237 +69,433 @@
   opacity: 0.8;
 }
 
-  nav{
-        background-color:#E3742C;
-        width: 100%;
-    }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0rem 0;
-        display: flex;
-        justify-content: center;
-    }
+/* --------------------------------- */
+/* NAVEGACIÓN Y MENÚ HAMBURGUESA */
+/* --------------------------------- */
+nav{
+    background-color:#E3742C;
+    width: 100%;
+}
 
-      nav ul li {
-        margin: 0 15px;
-        transition: transform 0.3s ease;
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0rem 0;
+    display: flex; /* Por defecto, en escritorio/tablet es visible y en línea */
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+    transform:translateY(5px);
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #E3742C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition:transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:#E3742C;
+    transform: translateY(8px); 
+    transition:1s;
+    background-color: white;
+}
+
+/* Menú hamburguesa - Elementos ocultos en escritorio */
+#menu-toggle {
+    display: none;
+}
+
+.hamburguesa {
+    display: none; /* Oculto en escritorio */
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: #E3742C;
+}
+/* --------------------------------- */
+
+
+.head {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+.head p {
+    margin-top: -10px;
+    font-size: 1.2rem;
+}
+  
+.content1, .content2, .content3 {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 1.1rem;
+}
+
+.content1 .imgcom img,
+.content2 .imgeleccion img,
+.content3 .imgniveles img {
+    width: 50px;
+    height: 50px;
+    border-radius: 0;
+}
+
+.imgcom, .imgeleccion, .imgniveles {
+    display: flex;
+    justify-content: right;
+}
+
+main>.content1:hover,
+main>.content2:hover,
+main>.content3:hover {
+    transform: scale(1.07);
+    transition: 1.5s;
+}
+
+@keyframes display {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
     }
-     nav ul li:hover {
-        transform:translateY(5px);
+    10% {
+      transform: translateX(0);
+      opacity: 1;
     }
-     nav ul li a {
-        display: inline-block;
-        padding: 0.8rem 2rem;
-        background-color: #E3742C;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1rem;
-        border-radius: 4px;
-        transition:transform 0.3s ease;
+    20% {
+      transform: translateX(0);
+      opacity: 1;
     }
-     nav ul li a:hover {
-        color:#E3742C;
-        transform: translateY(8px); 
-        transition:1s;
-        background-color: white;
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
     }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+}
+
+main img { /* Estilo genérico, ajustado en responsive */
+    width: 650px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.pic-ctn {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 2rem auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pic-ctn > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: display 12s infinite;
+    border-radius: 15px;
+}
+
+/* Animaciones con retardo */
+.pic-ctn img:nth-child(1) { animation-delay: 0s; }
+.pic-ctn img:nth-child(2) { animation-delay: 4s; }
+.pic-ctn img:nth-child(3) { animation-delay: 8s; }
+
+footer {
+    text-align: center;
+    background-color: #004d40;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+footer img { /* Ajuste: Especificar footer img para evitar afectar otras img */
+  width: 15rem;
+  height: 15rem;
+}
+
+.politica {
+    width: 20%;
+}
+
+.politica h3 {
+    margin-right: 140px;
+}
+
+.politica ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.politica ul li {
+    list-style: none;
+    text-align: left;
+}
+
+
+.contacto h3 {
+    margin-right: 330px;
+}
+
+.contacto ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.contacto ul li a {
+    color: white;
+}
+/*---------------------------------------*/
+.endfooter {
+    background-color: #043028;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+/* ============================= */
+/* RESPONSIVE DESIGN ADAPTADO */
+/* ============================= */
+
+/* ======== TABLET (max-width: 834px) ======== */
+@media (max-width: 834px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
 
   .logo-nav {
-      width: 4.5rem;
-      height: 4.5rem;
-      padding-right: 1rem;
-      padding-left: 1.5rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
   }
 
-  .head {
-      background-color: #004d40;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+  .languages {
+    margin: 1rem auto 0;
+    margin-right: auto; /* Para centrarlo correctamente en columna */
   }
 
-  h1 {
-      letter-spacing: 3px;
+  /* La nav principal sigue siendo visible, pero se ajusta */
+  nav ul {
+    flex-wrap: wrap;
+    gap: 0.5rem;
   }
 
-  .head p {
-    margin-top: -10px;
-      font-size: 1.2rem;
+  nav ul li a {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
   }
-  
+
   .content1, .content2, .content3 {
-      background-color: rgba(255, 255, 255, 0.8);
-      margin: 2rem auto;
-      padding: 1rem;
-      border-radius: 8px;
-      width: 70%;
-      font-size: 1.1rem;
-  }
-
-  .content1 .imgcom img {
-      width: 50px;
-      height: 50px;
-      border-radius: 0;
-  }
-
-  .imgcom {
-    display: flex;
-    justify-content: right;
-
-  }
-
-  .content2 .imgeleccion img {
-      width: 50px;
-      height: 50px;
-      border-radius: 0;
-  }
-
-  .imgeleccion {
-    display: flex;
-    justify-content: right;
-  }
-
-  .content3 .imgniveles img {
-      width: 50px;
-      height: 50px;
-      border-radius: 0;
-  }
-
-  .imgniveles {
-    display: flex;
-    justify-content: right;
-  }
-
-  main>.content1:hover {
-      transform: scale(1.07);
-      transition: 1.5s;
-  }
-
-  main>.content2:hover {
-      transform: scale(1.07);
-      transition: 1.5s;
-  }
-
-  main>.content3:hover {
-      transform: scale(1.07);
-      transition: 1.5s;
-  }
-
-  @keyframes display {
-        0% {
-          transform: translateX(200px);
-          opacity: 0;
-        }
-        10% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        20% {
-          transform: translateX(0);
-          opacity: 1;
-        }
-        30% {
-          transform: translateX(-200px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateX(-200px);
-          opacity: 0;
-        }
-  }
-
-  main img {
-        width: 650px;
-        height: 500px;
-        border-radius: 20px;
+    width: 90%;
+    font-size: 1rem;
   }
 
   .pic-ctn {
-        position: relative;
-        width: 75vw;
-        height: 540px;
-        margin-top: 25px;
-  }
-
-  .pic-ctn > img {
-        position: absolute;
-        top: 0;
-        left: calc(50% - 100px);
-        opacity: 0;
-        animation: display 10s infinite;
-  }
-
-  img:nth-child(2) {
-        animation-delay: 2s;
-  }
-  img:nth-child(3) {
-        animation-delay: 4s;
-  }
-  img:nth-child(4) {
-        animation-delay: 6s;
-  }
-  img:nth-child(5) {
-        animation-delay: 8s;
+    width: 95%;
+    aspect-ratio: 16/10;
   }
 
   footer {
-        text-align: center;
-        background-color: #004d40;
-        color: white;
-        padding: 2rem;
-        font-size: 1.2rem;
-        display: flex;
-        justify-content: space-around;
-  }
-
-  .politica {
-    width: 300px;
-    height: 180px;
-  }
-
-  .politica h3 {
-    margin-right: 105px;
-  }
-
-    .politica ul li a {
-        color: white;
-        text-decoration: none;
-  }
-
-      .politica ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-  .contacto h3 {
-    margin-right: 340px;
-  }
-
-    .contacto ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-          .contacto ul li a {
-            color: white;
-  }
-
-    .endfooter {
-      background-color: #043028;
-      color: white;
-      text-align: center;
-      padding: 0.3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
   }
 
   iframe {
-    border-radius: 5px;
-
+    width: 80%;
+    height: 220px;
+    margin-bottom: 1rem;
   }
 
-  @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
+  .contacto, .politica {
+    width: 40%; /* Dos columnas en tablet */
+    margin: 0.5rem 0;
   }
+
+  .contacto h3,
+  .politica h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .contacto ul li,
+  .politica ul li {
+    text-align: center;
+  }
+
+  footer img { /* Ajuste: Especificar footer img */
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+}
+
+
+/* ======== MÓVIL (max-width: 480px / cubre 360px) ======== */
+@media (max-width: 480px) {
+
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  header {
+    flex-direction: row; /* Volvemos a fila para que el logo esté con la hamburguesa */
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+  
+  .languages {
+    display: none; /* Ocultar idiomas en móvil para simplificar, se puede añadir al menú si es necesario */
+  }
+  
+  .logo-nav {
+    padding-left: 0.5rem;
+  }
+
+  /* Mostrar Menú Hamburguesa */
+  .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
+
+  .head h1 {
+    font-size: 1.5rem;
+  }
+
+  .head p {
+    font-size: 1rem;
+  }
+
+  .content1, .content2, .content3 {
+    width: 95%;
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .imgcom, .imgeleccion, .imgniveles {
+    justify-content: center;
+  }
+
+  .pic-ctn {
+    width: 95%;
+    aspect-ratio: 4/3; /* Más alto en móvil */
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  iframe {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .contacto, .politica {
+    width: 90%; /* Una sola columna en móvil */
+  }
+
+  .contacto h3,
+  .politica h3 {
+    margin-right: 0;
+  }
+
+  .contacto ul li,
+  .politica ul li {
+    text-align: center;
+  }
+
+  footer img { /* Ajuste: Especificar footer img */
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .endfooter {
+    font-size: 0.8rem;
+  }
+}

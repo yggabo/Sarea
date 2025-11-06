@@ -74,45 +74,110 @@
   opacity: 0.8;
 }
 
+/* --------------------------------- */
+/* NAVEGACIÓN Y MENÚ HAMBURGUESA */
+/* --------------------------------- */
+nav{
+    background-color:#E3742C;
+    width: 100%;
+}
 
-/* BARRA DE NAVEGACIÓN (BOTONES) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0rem 0;
+    display: flex; /* Por defecto, en escritorio/tablet es visible y en línea */
+    justify-content: center;
+}
 
- nav{
-        background-color:#E3742C;
-        width: 100%;
-    }
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0rem 0;
-        display: flex;
-        justify-content: center;
-    }
+nav ul li {
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
 
-      nav ul li {
-        margin: 0 15px;
-        transition: transform 0.3s ease;
-    }
-     nav ul li:hover {
-        transform:translateY(5px);
-    }
-     nav ul li a {
-        display: inline-block;
-        padding: 0.8rem 2rem;
-        background-color: #E3742C;
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1rem;
-        border-radius: 4px;
-        transition:transform 0.3s ease;
-    }
-     nav ul li a:hover {
-        color:#E3742C;
-        transform: translateY(8px); 
-        transition:1s;
-        background-color: white;
-    }
+nav ul li:hover {
+    transform:translateY(5px);
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #E3742C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    transition:transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color:#E3742C;
+    transform: translateY(8px); 
+    transition:1s;
+    background-color: white;
+}
+
+/* Menú hamburguesa - Elementos ocultos en escritorio */
+#menu-toggle {
+    display: none;
+}
+
+.hamburguesa {
+    display: none; /* Oculto en escritorio */
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: #E3742C;
+}
+
+/* ============================================== */
+/* RESPONSIVE DESIGN ADAPTADO 480px / cubre 360px */
+/* ============================================== */
+
+@media (max-width: 480px) {
+  .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
+}
 
 /* SECCIÓN PRINCIPAL: */
 
@@ -127,13 +192,13 @@
 
     }
 
-    h1 {
+    main h1 {
         font-size: 5rem;
         text-shadow: 0 7px 7px black;
         margin-bottom: 0;
     }
 
-    h3 {
+    main h3 {
         font-size: 3rem;
         text-shadow: 7px 7px 7px black;
         margin-top: 0;
@@ -146,16 +211,66 @@
 
 /* FOOTER: */
 
-    footer {
-      background-color: #0b1320;
-      color: white;
-      text-align: center;
-      padding: 0.7rem;
-      font-size: 0.8rem;
-      height: 4rem;
-    }
+footer {
+    text-align: center;
+    background-color: #004d40;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+footer img { /* Ajuste: Especificar footer img para evitar afectar otras img */
+  width: 15rem;
+  height: 15rem;
+}
+
+.politica {
+    width: 20%;
+}
+
+.politica h3 {
+    margin-right: 140px;  
+
+}
+
+.politica ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.politica ul li {
+    list-style: none;
+    text-align: left;
+}
 
 
+.contacto h3 {
+    margin-right: 330px;
+}
+
+.contacto ul li {
+    list-style: none;
+    text-align: left;
+}
+
+.contacto ul li a {
+    color: white;
+}
+
+/*---------------------------------------*/
+
+.endfooter {
+    background-color: #043028;
+    color: white;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+iframe {
+    border-radius: 5px;
+}
   </style>
 </head>
 <body>
@@ -186,15 +301,17 @@
 <!-- AQUÍ EMPIEZA EL MENÚ DE SECCIONES -->
 
   <nav>
-    <ul>
-                 <li><a href="index.html">Inicio</a></li>
-                 <li><a href="historia.html">Historia</a></li>
-                 <li><a href="partidos.html">Partidos</a></li>
-                 <li><a href="liga.html">Liga</a></li>
-                 <li><a href="escuela.html">Escuela</a></li>
-                 <li><a href="financiamiento.html">Quiénes somos</a></li>
-                 <li><a href="registro.html">Registro</a></li>
-    </ul>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburguesa">☰</label>
+      <ul id="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="partidos.html">Partidos</a></li>
+        <li><a href="liga.html">Liga</a></li>
+        <li><a href="escuela.html">Escuela</a></li>
+        <li><a href="registro.html" class="activo">Registro</a></li>
+        <li><a href="financiemento.html">Quienes Somos</a></li>
+      </ul>
   </nav>
 
 <!-- AQUÍ TERMINA EL MENÚ DE SECCIONES -->
@@ -205,9 +322,30 @@
     <h3>Web oficial del Club de Frontón de Gernika</h3>
   </main>
 
+  <!-- AQUÍ EMPIEZA EL FOOTER -->
+
   <footer>
-        <p>Página con fines académicos. Se reconoce a los autores de todas las fotografías e imágenes.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d668.3889070296316!2d-2.678608291901234!3d43.31738520688243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e3a6aac955555%3A0xa154196af499653d!2sGernika%20Jai%20Alai!5e0!3m2!1ses!2ses!4v1762330012410!5m2!1ses!2ses" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacto">
+        <h3>Contáctanos</h3>
+          <ul>
+            <li>Teléfono: +34 699 99 9999</li>
+            <li>Correo: <a href="https://workspace.google.com/intl/es/gmail/">GernikakoArbola@gmail.com</a></li>
+            <li>Carlos Gangoiti Kalea, 14, 48300 Gernika-Lumo, Bizkaia</li>
+          </ul>
+      </div>
+      <div class="politica">
+        <h3>Legalidad</h3>
+          <ul>
+            <li><a href="avisolegal.html">Política de Privacidad</a></li>
+            <li><a href="avisolegal.html">Aviso Legal</a></li>
+            <li><a href="avisolegal.html">Política de Cookies</a></li>
+          </ul>
+      </div>
+      <img src="img/logo_color.png" alt="logo">
+    </footer>
+      <div class="endfooter">
         <p>© 2025 SAREA Konsulting Group</p>
-  </footer>
+      </div>
 </body>
 </html>
