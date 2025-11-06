@@ -170,7 +170,6 @@ header h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .logo-container img {
@@ -272,8 +271,8 @@ input[type="radio"][name="selector-liga"] {
 }
 
 .logo-container img {
-  height: 20rem;
-  width: 20rem;
+  height: 25rem;
+  width: 25rem;
   transition: transform 0.3s ease, border 0.3s ease, opacity 0.3s ease;
   border: 4px solid transparent;
   border-radius: 12px;
@@ -282,7 +281,7 @@ input[type="radio"][name="selector-liga"] {
 #liga-mayor:checked ~ .logo-container label[for="liga-mayor"] img,
 #liga-menor:checked ~ .logo-container label[for="liga-menor"] img {
   border-color: #E3742C;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 
