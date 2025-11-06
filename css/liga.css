@@ -237,6 +237,57 @@ textarea {
         box-sizing: border-box; 
     }
 
+/* INTERCAMBIADOR DE FORMULARIOS: */
+
+
+input[type="radio"][name="selector-liga"] {
+  display: none;
+}
+
+#formulario-liga1,
+#formulario-liga2 {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#liga-mayor:checked ~ #formulario-liga1 {
+  display: block;
+  opacity: 1;
+}
+
+#liga-menor:checked ~ #formulario-liga2 {
+  display: block;
+  opacity: 1;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container label {
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.logo-container img {
+  height: 30rem;
+  width: 30rem;
+  transition: transform 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+  border: 4px solid transparent;
+  border-radius: 12px;
+}
+
+#liga-mayor:checked ~ .logo-container label[for="liga-mayor"] img,
+#liga-menor:checked ~ .logo-container label[for="liga-menor"] img {
+  border-color: #E3742C;
+  transform: scale(1.05);
+}
+
+
 /* FOOTER: */
 
 .circulo-con-flecha-svg {

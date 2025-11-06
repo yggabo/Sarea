@@ -62,12 +62,23 @@
 
 <!-- AQUÍ EMPIEZAN LOS FORMULARIOS -->
 
+
 <section class="seleccion-liga">
 
-    <div class="logo-container">
-        <img src="img/logo-liga-mayor.png">
-        <img src="img/logo-liga-menor.png">
-    </div>
+  <input type="radio" name="selector-liga" id="liga-mayor" checked>
+  <input type="radio" name="selector-liga" id="liga-menor">
+
+
+  <div class="logo-container">
+
+    <label for="liga-mayor">
+      <img src="img/logo-liga-mayor.png" alt="Liga Mayor">
+    </label>
+
+    <label for="liga-menor">
+      <img src="img/logo-liga-menor.png" alt="Liga Menor">
+    </label>
+  </div>
 
     <div id="formulario-liga1" class="form-container"> 
             <div class="formulario">
@@ -106,6 +117,46 @@
                       
                   </form>
             </div>
+
+
+            <div id="formulario-liga2" class="form-container"> 
+            <div class="formulario">
+                <h2>LIGA DE CESTA PUNTA INFANTO-JUVENIL</h2>
+                <p>Nuestro torneo para chicas y chicos de 8 a 15 años</p>
+                <form action="/procesar-registro" method="POST">
+                    <label for="nombre">Nombre del equipo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe el nombre de tu equipo aquí">
+
+                    <label for="integrantes">Integrantes:</label>
+                    <input type="text" id="integrantes" name="integrante1" placeholder="Integrante 1">
+                    <input type="text" id="integrantes" name="integrante2" placeholder="Integrante 2">
+                    <input type="text" id="integrantes" name="integrante3" placeholder="Integrante 3">
+                    <input type="text" id="integrantes" name="integrante4" placeholder="Integrante 4">
+                    
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required placeholder="Escribe la ciudad de la que viene tu equipo">
+
+                    <label for="representante">Representante del equipo:</label>
+                    <input type="text" id="representante" name="representante" required placeholder="Escribe el nombre de la persona que representará a tu equipo en la Liga">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="ejemplo@ejemplo.com">
+
+                    <label for="nivel">Nivel:</label>
+                    <select id="nivel" name="nivel">
+                      <option value="principiante">Principiante</option>
+                      <option value="intermedio">Intermedio</option>
+                      <option value="avanzado">Avanzado</option>
+                    </select>
+                    
+                    <label for="comentario">Comentarios:</label>
+                    <textarea id="comentario" name="comentario" rows="3" placeholder="Si tienes comentarios u observaciones que quieras compartirnos, puedes dejarlas en este espacio."></textarea>
+
+                    <button type="submit">Registra tu equipo</button>
+                      
+                  </form>
+            </div>
+
 </section>
 
 <!-- AQUÍ EMPIEZA EL BOTÓN DE VOLVER ARRIBA -->
