@@ -197,6 +197,11 @@ header h2{
     width: 30rem;
 }
 
+.logo-container img:hover {
+   scroll-behavior: smooth;
+   transform:scale(110%)
+}
+
 .formulario {
   margin: 3rem;
   margin-top: 5rem;
