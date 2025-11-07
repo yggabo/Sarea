@@ -5,7 +5,7 @@ body {
   background-image: url(/img/partido.jpg);
   background-size:cover;    
   height: 90vh;           
-  margin: 0;                   
+                   
   background-attachment: fixed;
   font-family: Montserrat;
   margin: 0;
@@ -32,8 +32,8 @@ body {
 }
 
 .arrow {
-  height: 2.3rem;
-  padding: 15px;
+  height: 1.5rem;
+  padding: 0.5px;
   color: #E3742C;
 }
 /*Termina botón de subida*/
@@ -91,13 +91,11 @@ header {
         padding: 0.3rem;
         align-items: center;
     }
-
-
-    header h2{
+header h2{
       font-size:2rem;
     }
 
-    .logo-header {
+.logo-header {
         width: 4.5rem;
         height: 4.5rem;
         padding-right: 1rem;
@@ -141,7 +139,7 @@ header {
         background-color:#E3742C;
         width: 100%;
     }
-      nav ul {
+nav ul {
         list-style: none;
         margin: 0;
         padding: 0rem 0;
@@ -149,14 +147,14 @@ header {
         justify-content: center;
     }
 
-      nav ul li {
+nav ul li {
         margin: 0 15px;
         transition: transform 0.3s ease;
     }
-     nav ul li:hover {
+nav ul li:hover {
         transform:translateY(5px);
     }
-     nav ul li a {
+nav ul li a {
         display: inline-block;
         padding: 0.8rem 2rem;
         background-color: #E3742C;
@@ -167,13 +165,13 @@ header {
         border-radius: 4px;
         transition:transform 0.3s ease;
     }
-     nav ul li a:hover {
+nav ul li a:hover {
         color:#E3742C;
         transform: translateY(8px); 
         transition:1s;
         background-color: white;
     }
-    nav ul li a.activo {
+nav ul li a.activo {
         background-color: white;
         color: #1A4210;
         font-weight: bold;
@@ -182,7 +180,7 @@ header {
         z-index: 1;
     }
 /* Menú hamburguesa*/
-    #menu-toggle {
+#menu-toggle {
   display: none;
 }
 
@@ -197,7 +195,7 @@ header {
 
 /* FOOTER: */
 
-    footer {
+footer {
         text-align: center;
         background-color: #004d40;
         color: white;
@@ -207,39 +205,43 @@ header {
         justify-content: space-around;
   }
 
-  .politica {
+.politica {
     width: 300px;
     height: 180px;
   }
 
-  .politica h3 {
+.politica h3 {
     margin-right: 105px;
   }
 
-    .politica ul li a {
+.politica ul li a {
         color: white;
         text-decoration: none;
   }
 
-      .politica ul li {
+.politica ul li {
         list-style: none;
         text-align: left;
   }
 
-    .contacto ul li {
+.contacto ul li {
         list-style: none;
         text-align: left;
   }
 
-          .contacto ul li a {
+.contacto ul li a {
             color: white;
   }
 
-     .endfooter {
+.endfooter {
       background-color: #043028;
       color: white;
       text-align: center;
       padding: 0.3rem;
+  }
+footer img { /* Ajuste: Especificar footer img */
+    width: 8rem;
+    height: 8rem;
   }
 
  @media only screen and (max-width: 834px) {
@@ -282,14 +284,14 @@ footer {
             justify-content: center;
             align-items: center;
 }
-      .endfoot {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
+.endfoot {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
       
 }    
- .hamburguesa {
+.hamburguesa {
     display: block;
   }
 
@@ -328,10 +330,33 @@ footer {
   #menu li a.activo {
     background-color: white;
     color: #1A4210;
-  }              
+  }       
+  .subir {
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.subir:hover {
+   scroll-behavior: smooth;
+}
+
+.arrow {
+  height: 1.5rem;
+  padding: 0.5px;
+  color: #E3742C;
+}       
 }
          
-
   @media only screen and (max-width: 360px) {
   header {
     flex-direction: column; 
@@ -341,13 +366,21 @@ footer {
   nav ul {
     flex-direction: column; 
   }
+  .body {
+    background-image: none;
+    background-color: #1A4210;
+    background-size:cover; 
+    height: 90vh;           
+    margin: 0;                   
+    background-attachment: fixed;
+  }
   .bg-container {
     padding:1rem;
     max-width: 300px;
     margin: 0.5rem;
     border-radius: 8px;
   }
-footer {
+ footer {
           flex-direction: column;
           text-align: center;
           justify-content: center;
@@ -362,14 +395,12 @@ footer {
           
 }
 
-
 .contacto {
             flex-direction: column;
             text-align: center;
             justify-content: center;
             align-items: center;
 }      
-
 .endfoot {
           flex-direction: column;
           text-align: center;
@@ -419,5 +450,29 @@ footer {
     background-color: white;
     color: #1A4210;
   }
+  .subir {
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.subir:hover {
+   scroll-behavior: smooth;
+}
+
+.arrow {
+  height: 1.5rem;
+  padding: 0.5px;
+  color: #E3742C;
+}
 
   }
