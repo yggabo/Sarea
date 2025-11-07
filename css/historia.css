@@ -100,7 +100,7 @@ nav ul li a {
 nav ul li a:hover {
         color:#E3742C; /* Cambia el color del texto */
         transform: translateY(8px);  /* Desplaza hacia abajo */
-        transition:1.5s;
+        transition:1s;
         background-color: wheat; /* Fondo color trigo */
     }
     nav ul li a.activo {
@@ -180,7 +180,7 @@ footer {
         text-align: center;
         background-color: #004d40;
         color: white;
-        padding: 2rem;
+        padding: 1rem;
         font-size: 1.2rem;
         display: flex;
         justify-content: space-around;
@@ -191,12 +191,11 @@ footer {
   height: 15rem;
 }
 .politica {
-    width: 300px;
-    height: 180px;
+    width: 20%;
   }
 
 .politica h3 {
-    margin-right: 105px;
+    margin-right: 175px;
   }
 
 .politica ul li a {
@@ -210,7 +209,7 @@ footer {
   }
 
 .contacto h3 {
-    margin-right: 505px;
+    margin-right: 330px;
   }
 
 .contacto ul li {
