@@ -119,6 +119,20 @@ header h2{
         top: 6px;
         z-index: 1;
     }
+/* Menú hamburguesa*/
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburguesa {
+  display: none;
+  font-size: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+  color: white;
+  background-color: #E3742C;
+}
 
 /* FORMULARIO DE INSCRIPCIÓN A LIGAS */
 
@@ -294,16 +308,29 @@ input[type="radio"][name="selector-liga"] {
 
 /* FOOTER: */
 
-.circulo-con-flecha-svg {
-  padding: 15px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  transition: .3s ease;
+.subir {
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.subir:hover {
+   scroll-behavior: smooth;
 }
 
-.circulo-con-flecha-svg:hover {
-  transform: translateY(-3px);
+.arrow {
+  height: 1.5rem;
+  padding: 0.5px;
+  color: #E3742C;
 }
 
 footer {
@@ -368,10 +395,118 @@ iframe {
 
 
 
+@media only screen and (max-width: 834px) {
+  header {
+    flex-direction: column; /* Coloca elementos del header en columna */
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
+  }
+  .bg-container {
+    padding:1.5rem;
+  }
+footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+.politica{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+}
 
+.politica h3{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+         
+}
+.contacto {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+}
+.endfoot {
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      
+}    
+.hamburguesa {
+    display: block;
+  }
 
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
 
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
 
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }       
+  .subir {
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.subir:hover {
+   scroll-behavior: smooth;
+}
+
+.arrow {
+  height: 1.5rem;
+  padding: 0.5px;
+  color: #E3742C;
+}       
+}
 
 
 
