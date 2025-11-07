@@ -64,7 +64,8 @@ body {
 .lang-btn:hover {
   transform: scale(1.15);
   opacity: 0.8;
-}
+} 
+/*MENÚ DE NAVEGACIÓN*/
 nav{
         background-color:#E3742C;
         width: 100%;
@@ -110,18 +111,31 @@ nav ul li a:hover {
         top: 6px;
         z-index: 1;
     }
-    /*Botón de subida*/
-.circulo-con-flecha-svg {
-  padding: 15px;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  transition: .3s ease;
+  /* Botón de subida (volver arriba) */
+.subir {
+  position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+   font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.subir:hover {
+   scroll-behavior: smooth;
 }
 
-.circulo-con-flecha-svg:hover {
-  transform: translateY(-3px);
+.arrow {
+  height: 2.3rem;
+  padding: 15px;
+  color: #E3742C;
 }
+
+/*seccion principal*/
 .main {
   background-color: #004d40;
   color: white;
@@ -160,64 +174,71 @@ nav ul li a:hover {
 .content img:hover {
   transform: scale(1.03); /* Zoom leve en imágenes */
 }    
+/* FOOTER: */
+
 footer {
-  text-align: center;
-  background-color: #004d40;
-  color: white;
-  padding: 2rem;
-  font-size: 1.1rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1rem;
-}
+        text-align: center;
+        background-color: #004d40;
+        color: white;
+        padding: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-around;
+  }
 
-iframe {
-  border-radius: 5px;
-  max-width: 100%;
+ footer img {
+  width: 15rem;
+  height: 15rem;
 }
+.politica {
+    width: 300px;
+    height: 180px;
+  }
 
-.politica,
-.contacto {
-  max-width: 300px;
-}
+.politica h3 {
+    margin-right: 105px;
+  }
 
-.politica h3,
+.politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
+.politica ul li {
+        list-style: none;
+        text-align: left;
+  }
+
 .contacto h3 {
-  margin-bottom: 0.5rem;
-}
+    margin-right: 505px;
+  }
 
-.politica ul,
-.contacto ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-}
+.contacto ul li {
+        list-style: none;
+        text-align: left;
+  }
 
-.politica ul li a,
 .contacto ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.politica ul li a:hover,
-.contacto ul li a:hover {
-  text-decoration: underline;
-}
+            color: white;
+  }
 
 .endfooter {
-  background-color: #043028;
-  color: white;
-  text-align: center;
-  padding: 0.3rem;
-  font-size: 0.9rem;
-}
+      background-color: #043028;
+      color: white;
+      text-align: center;
+      padding: 0.3rem;
+  }
+
+iframe {
+    border-radius: 5px;
+
+  }
        /* Menú hamburguesa sin checkbox ni JS */
 #menu-toggle {
   display: none;
 }
 
-.hamburguesa {
+.hamburguesa { /*solo visible en pantallas pequenas*/
   display: none;
   font-size: 2rem;
   padding: 1rem;
@@ -227,11 +248,12 @@ iframe {
 }
     
 
-/* DISEÑO RESPONSIVO */
+/* DISEÑO RESPONSIVO:  RESPONSIVE EXTRA (pantallas pequeñas) tableta*/
 @media (max-width: 834px) {
   header {
     flex-direction: column; /* Coloca elementos del header en columna */
     text-align: center;
+    display: flex;
   }
   nav ul {
     flex-direction: column;  /* Menú vertical en pantallas pequeñas */
@@ -241,6 +263,76 @@ iframe {
   }
      /* Menú hamburguesa sin checkbox ni JS */
 .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex; /*muestra menu al hacer clic*/
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
+  footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+}
+/* RESPONSIVE EXTRA (pantallas pequeñas) Telefono */
+
+@media (max-width: 360px) {
+  header {
+    flex-direction: column; /* Coloca elementos del header en columna */
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
+  }
+  main {
+    padding:1.5rem;
+  }
+  footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+
+  }
+  hamburguesa {
     display: block;
   }
 
@@ -280,18 +372,5 @@ iframe {
     background-color: white;
     color: #1A4210;
   }
-}
 
-
-@media (max-width: 360px) {
-  header {
-    flex-direction: column; /* Coloca elementos del header en columna */
-    text-align: center;
-  }
-  nav ul {
-    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
-  }
-  main {
-    padding:1.5rem;
-  }
 }
