@@ -113,25 +113,27 @@ nav ul li a:hover {
     }
   /* Botón de subida (volver arriba) */
 .subir {
-  position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
     background-color: rgba(255, 228, 196, 0.584);
     color: white;
     padding: 10px 15px;
     border-radius: 50%;
     text-decoration: none; /* Quita el subrayado del enlace */
-   font-size: 24px;
+    font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .subir:hover {
    scroll-behavior: smooth;
+   transform: translateY(-3px);
 }
 
 .arrow {
-  height: 2.3rem;
-  padding: 15px;
+  height: 1.5rem;
+  padding: 0.5px;
   color: #E3742C;
 }
 
@@ -328,7 +330,6 @@ iframe {
           text-align: center;
           justify-content: center;
           align-items: center;
-     
 
   }
   hamburguesa {
