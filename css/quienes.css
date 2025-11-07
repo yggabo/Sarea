@@ -2,9 +2,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     body {
-      font-family: Montserrat;
-      margin: 0;
-      padding: 0;
+  font-family: Montserrat;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  background-image: url('/img/cesta\ punta.jpg'); 
+  background-size:cover;    
+  height: 100vh;           
+  margin: 0;                   
+  background-attachment: fixed;
     }
 
 /* HEADER: */
@@ -145,7 +152,7 @@ main {
     padding: 0 1rem;
 }
 
-h2, h3 {
+ h2 {
     color: #004d40;
 }
 
