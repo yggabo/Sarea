@@ -398,169 +398,112 @@ iframe {
 }
 
 
+@media screen and (max-width: 834px) {
 
-
-@media only screen and (max-width: 834px) {
+  /* HEADER */
   header {
-    flex-direction: column; /* Coloca elementos del header en columna */
-    text-align: center;
-    display: flex;
-  }
-  nav ul {
-    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
-  }
-  .bg-container {
-    padding:1.5rem;
-  }
-footer {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-     
-  }
-.politica{
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          
-}
-
-.politica h3{
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-         
-}
-.contacto {
-            flex-direction: column;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-}
-.endfoot {
-      flex-direction: column;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-      
-}    
-.hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
     flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
     align-items: center;
+    text-align: center;
+    padding: 1rem 0.5rem;
   }
 
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex;
-  }
-
-  #menu li {
+  header h2 {
+    font-size: 1.6rem;
     margin: 0.5rem 0;
   }
 
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
+  .languages {
+    margin: 0.5rem auto;
+    justify-content: center;
+  }
+
+  /* NAV */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  /* FORMULARIO */
+  .seleccion-liga {
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .logo-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo-container img {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .form-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .form-header h4 {
+    font-size: 1.2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  iframe {
+    width: 90%;
+    height: 200px;
+  }
+
+  .contacto h3, .politica h3 {
+    margin-right: 0;
     text-align: center;
-    border-radius: 4px;
   }
 
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
-  }
-
-  #menu li a.activo {
-    background-color: white;
-    color: #1A4210;
-  }       
-  .subir {
-    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
-    z-index: 1000;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(255, 228, 196, 0.584);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    text-decoration: none; /* Quita el subrayado del enlace */
-    font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-}
-.subir:hover {
-   scroll-behavior: smooth;
-}
-
-.arrow {
-  height: 1.5rem;
-  padding: 0.5px;
-  color: #E3742C;
-}       
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-    
-    .ta-center{
-        text-align: center;
-}
-.line-height{
-    line-height: 2.5;
-}
-
-.fs-l {
-    font-size: 2rem;
-}
-.fs-m {
-    font-size: 1.7rem;
-}
-.fs-s {
-    font-size: 1.4rem;
-}
-
-*/
-
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 1.8rem;
+  .contacto ul li, .politica ul li {
+    text-align: center;
   }
 }
 
 
 
 
+@media screen and (max-width: 480px) {
 
+  /* HEADER */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+  }
 
+  .logo-header {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+  }
 
+  header h2 {
+    font-size: 1.2rem;
+  }
+}
