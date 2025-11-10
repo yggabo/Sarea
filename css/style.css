@@ -188,6 +188,15 @@ footer {
   color: white;
 }
 
+  .contacto ul li a {
+      color: white;
+  }
+
+  .politica ul li a {
+        color: white;
+        text-decoration: none;
+  }
+
 
 .endfooter {
       background-color: #043028;
@@ -262,7 +271,8 @@ footer {
             align-items: center;
             text-decoration: none;
 }
-      .endfooter {
+
+  .endfooter {
           flex-direction: column;
           text-align: center;
           justify-content: center;
@@ -351,7 +361,7 @@ footer {
             text-align: center;
             justify-content: center;
             align-items: center;
-}      
+}  
 
 .endfooter {
           flex-direction: column;
