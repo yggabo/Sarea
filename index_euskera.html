@@ -8,6 +8,8 @@
   somos una escuela de diferentes categorías donde desde pequeños se aprende el arte de la cesta punta y se aprenden
   los valores que los rodea y se disfruta de ello en familia.">
   <title>Gernikako Frontoi Kluba</title>
+
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -131,52 +133,6 @@ nav ul li a:hover {
     background-color: #E3742C;
 }
 
-/* ============================================== */
-/* RESPONSIVE DESIGN ADAPTADO 480px / cubre 360px */
-/* ============================================== */
-
-@media (max-width: 480px) {
-  .hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
-    align-items: center;
-  }
-
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex;
-  }
-
-  #menu li {
-    margin: 0.5rem 0;
-  }
-
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
-  }
-
-  #menu li a.activo {
-    background-color: white;
-    color: #1A4210;
-  }
-}
 
 /* SECCIÓN PRINCIPAL: */
 
@@ -271,6 +227,231 @@ footer img { /* Ajuste: Especificar footer img para evitar afectar otras img */
 iframe {
     border-radius: 5px;
 }
+
+/* ============================================== */
+/* RESPONSIVE DESIGN — TABLET (max-width: 834px) */
+/* ============================================== */
+@media (max-width: 834px) {
+
+  /* ===== HEADER ===== */
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.2rem;
+  }
+
+  header h2 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+
+  .logo-header {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 0;
+  }
+
+  /* Menú de idiomas más compacto */
+  .languages {
+    gap: 6px;
+    margin-right: 1rem;
+  }
+
+  .lang-btn img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  /* ===== NAV / MENÚ ===== */
+  .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.8rem;
+    display: block;
+    width: 80%;
+    text-align: center;
+  }
+
+  nav ul li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  /* ===== MAIN ===== */
+  main {
+    padding: 5rem 1rem;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .main-logo {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  main h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  iframe {
+    width: 80%;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+
+  .contacto, .politica {
+    width: 40%; /* Dos columnas en tablet */
+    margin: 0.5rem 0;
+  }
+
+  .contacto h3,
+  .politica h3 {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .contacto ul li,
+  .politica ul li {
+    text-align: center;
+  }
+
+  footer img { /* Ajuste: Especificar footer img */
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ============================================== */
+/* RESPONSIVE DESIGN — MÓVIL (max-width: 360px) */
+/* ============================================== */
+@media (max-width: 360px) {
+
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem;
+  }
+
+  header h2 {
+    font-size: 1.1rem;
+  }
+
+  .logo-header {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .languages {
+    display: none; /* Ocultamos idiomas para simplificar */
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li a {
+    width: 80%;
+    text-align: center;
+    padding: 0.7rem;
+  }
+
+  main {
+    padding: 3rem 1rem;
+  }
+
+  .main-logo {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  main h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  footer iframe {
+    width: 90%;
+    height: 180px;
+  }
+
+  .contacto, .politica {
+    width: 90%;
+  }
+
+  footer img {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .endfooter {
+    font-size: 0.8rem;
+  }
+}
+
   </style>
 </head>
 <body>

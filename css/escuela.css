@@ -415,8 +415,8 @@ iframe {
 }
 
 
-/* ======== MÓVIL (max-width: 480px / cubre 360px) ======== */
-@media (max-width: 480px) {
+/* ======== MÓVIL (360px) ======== */
+@media (max-width: 360px) {
 
   body {
     background-position: right;
