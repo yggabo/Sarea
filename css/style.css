@@ -121,6 +121,8 @@ header h2{
 
 /* FOOTER: */
 
+
+/* Botón de subida*/
 .subir {
     position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
     z-index: 1000;
@@ -138,6 +140,7 @@ header h2{
 }
 .subir:hover {
    scroll-behavior: smooth;
+   transform: translateY(-10px);
 }
 
 .arrow {
@@ -145,6 +148,9 @@ header h2{
   padding: 0.5px;
   color: #E3742C;
 }
+
+/*Termina botón de subida*/
+
 
 footer {
     text-align: center;
@@ -206,4 +212,186 @@ iframe {
 }
 
 
+ 
+/* ---------------- RESPONSIVE ---------------- */
 
+
+
+ @media only screen and (max-width: 834px) {
+  header {
+    flex-direction: column; /* Coloca elementos del header en columna */
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
+  }
+  .bg-container {
+    padding:1.5rem;
+  }
+footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+.politica{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+}
+
+.politica h3{
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+         
+}
+.contacto {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+}
+      .endfoot {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+      
+} 
+   
+ .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-cajita:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }              
+}
+   
+ @media only screen and (max-width: 360px) {
+  
+  header {
+    flex-direction: column; 
+    text-align: center;
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column; 
+  }
+  .bg-container {
+    padding:1rem;
+    max-width: 300px;
+    margin: 0.5rem;
+    border-radius: 8px;
+  }
+footer {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+     
+  }
+.politica{
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          
+}
+
+
+.contacto {
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+}      
+
+.endfoot {
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+}
+
+ .hamburguesa {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+    flex-direction: column;
+    background-color: #E3742C;
+    padding: 1rem 0;
+    align-items: center;
+  }
+
+  #menu-toggle:checked + .hamburguesa + #menu {
+    display: flex;
+  }
+
+  #menu li {
+    margin: 0.5rem 0;
+  }
+
+  #menu li a {
+    color: white;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 80%;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  #menu li a:hover {
+    background-color: white;
+    color: #E3742C;
+  }
+
+  #menu li a.activo {
+    background-color: white;
+    color: #1A4210;
+  }
+
+  }
