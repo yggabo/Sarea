@@ -14,23 +14,24 @@ body {
   margin: 0;                   
   background-attachment: fixed;
     }
-    
+    /*Seccion principal (.main)*/
 .main {
   background-color: #004d40;
   color: white;
   text-align: center;
   padding: 0.5rem 0.5rem;
 }
+/*Estilos del titulo dentro de .main*/
 .main h2 {
   margin: 0;
   font-size: 2rem;
 }
+/*Estilos del parafo dentro de .main*/
 .main p {
   font-style: italic;
   font-size: 1.1rem;
 }
-
-/* CONTENIDO PRINCIPAL */
+/*contenedor del contenido*/
 .content {
   background: white;
   margin: 2rem auto;
@@ -39,216 +40,20 @@ body {
   max-width: 900px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+/* Estilos para los títulos dentro del contenido */
 .content h2 {
   color: #00695c;
   border-left: 5px solid #004d40; /* Barra decorativa a la izquierda */
   padding-left: 10px;
 }
+/* Estilos para las imágenes dentro del contenido */
 .content img {
   width: 100%;
   border-radius: 8px;
   margin-top: 1rem;
   transition: transform 0.3s ease;
 }
+/* Efecto al pasar el mouse sobre las imágenes */
 .content img:hover {
   transform: scale(1.03); /* Zoom leve en imágenes */
 }    
-/* FOOTER: */
-
-footer {
-        text-align: center;
-        background-color: #004d40;
-        color: white;
-        padding: 2rem;
-        font-size: 1.2rem;
-        display: flex;
-        justify-content: space-around;
-  }
-
- footer img {
-  width: 15rem;
-  height: 15rem;
-}
-.politica {
-    width: 300px;
-    height: 180px;
-  }
-
-.politica h3 {
-    margin-right: 105px;
-  }
-
-.politica ul li a {
-        color: white;
-        text-decoration: none;
-  }
-
-.politica ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-.contacto h3 {
-    margin-right: 330px;
-  }
-
-.contacto ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-.contacto ul li a {
-            color: white;
-  }
-
-.endfooter {
-      background-color: #043028;
-      color: white;
-      text-align: center;
-      padding: 0.3rem;
-  }
-
-iframe {
-    border-radius: 5px;
-
-  }
-       /* Menú hamburguesa sin checkbox ni JS */
-#menu-toggle {
-  display: none;
-}
-
-.hamburguesa { /*solo visible en pantallas pequenas*/
-  display: none;
-  font-size: 2rem;
-  padding: 1rem;
-  cursor: pointer;
-  color: white;
-  background-color: #E3742C;
-}
-    
-
-/* DISEÑO RESPONSIVO:  RESPONSIVE EXTRA (pantallas pequeñas) tableta*/
-@media (max-width: 834px) {
-  header {
-    flex-direction: column; /* Coloca elementos del header en columna */
-    text-align: center;
-    display: flex;
-  }
-  nav ul {
-    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
-  }
-  main {
-    padding:1.5rem;
-  }
-     /* Menú hamburguesa sin checkbox ni JS */
-.hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
-    align-items: center;
-  }
-
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex; /*muestra menu al hacer clic*/
-  }
-
-  #menu li {
-    margin: 0.5rem 0;
-  }
-
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
-  }
-
-  #menu li a.activo {
-    background-color: white;
-    color: #1A4210;
-  }
-  footer {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-     
-  }
-}
-/* RESPONSIVE EXTRA (pantallas pequeñas) Telefono */
-
-@media (max-width: 360px) {
-  header {
-    flex-direction: column; /* Coloca elementos del header en columna */
-    text-align: center;
-    display: flex;
-  }
-  nav ul {
-    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
-  }
-  main {
-    padding:1.5rem;
-  }
-  footer {
-          flex-direction: column;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-
-  }
-  hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
-    align-items: center;
-  }
-
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex;
-  }
-
-  #menu li {
-    margin: 0.5rem 0;
-  }
-
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
-  }
-
-  #menu li a.activo {
-    background-color: white;
-    color: #1A4210;
-  }
-
-}
