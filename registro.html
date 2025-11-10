@@ -4,33 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/css/registro.css" />
+   <link rel="stylesheet" href="/css/style.css" />
+  
+
   <title>Registro | Gernikako Arbola Frontoi</title>
 </head>
 
 <body>
+  <!-- HEADER -->
   <header>
-
-
     <img src="/img/logo_verde.png" alt="Logotipo del Gernikako Arbola Frontoi" class="logo-header" />
-    <h1>GERNIKAKO ARBOLA FRONTOIA</h1>
-    <!-- AQUÍ EMPIEZA EL MENÚ DE IDIOMAS -->
+    <h2>GERNIKAKO ARBOLA FRONTOIA</h2>
 
-
-          <div class="languages">
-            <button class="lang-btn" title="Euskera">
-            <img src="img/flag-eus.svg" alt="Euskera">
-            </button>
-            <button class="lang-btn" title="English">
-            <img src="img/flag-eng.png" alt="English">
-            </button>
-            <button class="lang-btn" title="French">
-            <img src="img/flag-fra.png" alt="French">
-            </button>
+    <div class="languages">
+      <button class="lang-btn" title="Euskera"><img src="img/flag-eus.svg" alt="Euskera"></button>
+      <button class="lang-btn" title="English"><img src="img/flag-eng.png" alt="English"></button>
+      <button class="lang-btn" title="French"><img src="img/flag-fra.png" alt="French"></button>
+    </div>
   </header>
 
+  <!-- NAV -->
   <nav>
-     <input type="checkbox" id="menu-cajita" />
-  <label for="menu-cajita" class="hamburguesa">☰</label>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="hamburguesa">☰</label>
     <ul id="menu">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="historia.html">Historia</a></li>
@@ -42,12 +38,16 @@
     </ul>
   </nav>
 
+  <!-- BOTÓN SUBIR -->
   <a class="subir" href="#"><img class="arrow" src="img/arrow-up-solid-full.svg" alt=""></a>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
     <section class="registro-container">
       <div class="formulario">
         <h2><u>Únete al club</u></h2>
+
+        <!-- FORMULARIO -->
         <form action="/procesar-registro" method="POST">
           <label for="nombre">Nombre y apellido:</label>
           <input type="text" id="nombre" name="nombre" required />
@@ -70,13 +70,12 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2890.5381121705665!2d-2.9447249!3d43.2631193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e503004259e4f%3A0xdd63774224e34644!2sEstadio%20de%20San%20Mam%C3%A9s!5e0!3m2!1ses!2ses!4v1730843516478!5m2!1ses!2ses"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d668.3889070296316!2d-2.678608291901234!3d43.31738520688243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e3a6aac955555%3A0xa154196af499653d!2sGernika%20Jai%20Alai!5e0!3m2!1ses!2ses!4v1762330012410!5m2!1ses!2ses"
       width="350"
       height="250"
-      style="border:0;"
-      allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
@@ -84,7 +83,6 @@
     <div class="contacto">
       <h3>Contáctanos</h3>
       <ul> 
-        
         <li>Teléfono: +34 699 99 9999</li>
         <li>Correo: <a href="mailto:GernikoArbola@gmail.com">GernikoArbola@gmail.com</a></li>
         <li>Dirección: Rafael Moreno "Pitxitxi", Basurto-Zorroza, 48013 Bilbao, Biscay</li>
@@ -99,9 +97,11 @@
         <li><a href="avisolegal.html">Política de Cookies</a></li>
       </ul>
     </div>
+
     <img src="img/logo_color.png" alt="logo">
   </footer>
- 
+
+  <!-- COPYRIGHT -->
   <div class="endfooter">
     <p>© 2025 SAREA Konsulting Group</p>
   </div>
