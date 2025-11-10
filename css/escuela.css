@@ -121,7 +121,7 @@ main img {
 /* RESPONSIVE DESIGN ADAPTADO */
 /* ============================= */
 
-/* ======== TABLET (max-width: 834px) ======== */
+/* ======== TABLET (834px) ======== */
 @media (max-width: 834px) {
 
   .languages {
@@ -139,7 +139,6 @@ main img {
     aspect-ratio: 16/10;
   }
 }
-
 
 /* ======== MÓVIL (360px) ======== */
 @media (max-width: 360px) {

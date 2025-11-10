@@ -7,34 +7,6 @@
       line-height: 1.5;
       background-color: #1a4210;
   }
-    
-  header {
-      background-color: #1a4210;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      color: white;
-      text-align:left;
-      padding-left: 0.5rem;
-      align-items: center;
-  }
-
-  header img {
-      width: 30px;
-      height: 15px;
-  }
-
-  header h2{
-      font-size:2rem;
-  }
-
-
-  .logo-nav {
-      width: 4.5rem;
-      height: 4.5rem;
-      padding-right: 1rem;
-      padding-left: 1.5rem;
-  }
 
   .head {
       background-color: #004d40;
@@ -51,63 +23,6 @@
       font-size: 1.2rem;
   }
 
-  /* --------------------------------- */
-/* NAVEGACIÓN Y MENÚ HAMBURGUESA */
-/* --------------------------------- */
-nav{
-    background-color:#E3742C;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0rem 0;
-    display: flex; /* Por defecto, en escritorio/tablet es visible y en línea */
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-    transition: transform 0.3s ease;
-}
-
-nav ul li:hover {
-    transform:translateY(5px);
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background-color: #E3742C;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-    border-radius: 4px;
-    transition:transform 0.3s ease;
-}
-
-nav ul li a:hover {
-    color:#E3742C;
-    transform: translateY(8px); 
-    transition:1s;
-    background-color: white;
-}
-
-/* Menú hamburguesa - Elementos ocultos en escritorio */
-#menu-toggle {
-    display: none;
-}
-
-.hamburguesa {
-    display: none; /* Oculto en escritorio */
-    font-size: 2rem;
-    padding: 1rem;
-    cursor: pointer;
-    color: white;
-    background-color: #E3742C;
-}
 /* --------------------------------- */
   
   .content1, .content2 {
@@ -119,124 +34,11 @@ nav ul li a:hover {
       font-size: 1.1rem;
   }
 
-  footer {
-        text-align: center;
-        background-color: #004d40;
-        color: white;
-        font-size: 1.2rem;
-        display: flex;
-        padding: 1rem;
-        justify-content: space-around;
-  }
-
-  img {
-    width: 15rem;
-    height: 15rem;
-  }
-
-  .politica {
-    width: 20%;
-  }
-
-  .politica h3 {
-    margin-right: 140px;
-  }
-
-    .politica ul li a {
-        color: white;
-        text-decoration: none;
-  }
-
-      .politica ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-
-  .contacto h3 {
-    margin-right: 330px;
-  }
-
-  .contacto ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-  .contacto ul li a {
-            color: white;
-  }
-/*---------------------------------------*/
-  .endfooter {
-      background-color: #043028;
-      color: white;
-      text-align: center;
-      padding: 0.3rem;
-  }
-
-  iframe {
-    border-radius: 5px;
-
-  }
-
-  /* ======== tablet hasta 834px ======== */
+  /* ======== tablet 834px ======== */
 @media (max-width: 834px) {
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .logo-nav {
-    width: 4rem;
-    height: 4rem;
-    padding: 0;
-  }
-
-  header h2 {
-    font-size: 1.6rem;
-  }
 
   .head {
     padding: 1.5rem;
-  }
-
-   /* Mostrar Menú Hamburguesa */
-  .hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
-    align-items: center;
-  }
-
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex;
-  }
-
-  #menu li {
-    margin: 0.5rem 0;
-  }
-
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
   }
 
   .content1, .content2 {
@@ -247,41 +49,6 @@ nav ul li a:hover {
   ul, ol {
     padding-left: 1.2rem;
   }
-
-  footer {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  iframe {
-    width: 80%;
-    height: 220px;
-    margin-bottom: 1rem;
-  }
-
-  .contacto, .politica {
-    width: 40%; /* Dos columnas en tablet */
-    margin: 0.5rem 0;
-  }
-
-  .contacto h3,
-  .politica h3 {
-    margin-right: 0;
-    text-align: center;
-  }
-
-  .contacto ul li,
-  .politica ul li {
-    text-align: center;
-  }
-
-  footer img { /* Ajuste: Especificar footer img */
-    width: 10rem;
-    height: 10rem;
-    margin-top: 1rem;
-  }
 }
 
 /* ======== movil 480px ======== */
@@ -289,16 +56,6 @@ nav ul li a:hover {
 
   body {
     font-size: 0.95rem;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-  }
-
-  header h2 {
-    font-size: 1.2rem;
   }
 
   .head {
@@ -314,43 +71,6 @@ nav ul li a:hover {
     font-size: 1rem;
   }
 
-   /* Mostrar Menú Hamburguesa */
-  .hamburguesa {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-    flex-direction: column;
-    background-color: #E3742C;
-    padding: 1rem 0;
-    align-items: center;
-  }
-
-  #menu-toggle:checked + .hamburguesa + #menu {
-    display: flex;
-  }
-
-  #menu li {
-    margin: 0.5rem 0;
-  }
-
-  #menu li a {
-    color: white;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    width: 80%;
-    text-align: center;
-    border-radius: 4px;
-  }
-
-  #menu li a:hover {
-    background-color: white;
-    color: #E3742C;
-  }
-
   .content1, .content2 {
     width: 95%;
     font-size: 0.95rem;
@@ -359,42 +79,5 @@ nav ul li a:hover {
 
   ul, ol {
     padding-left: 1rem;
-  }
-
-   footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  iframe {
-    width: 90%;
-    height: 200px;
-    margin: 0 auto;
-  }
-
-  .contacto, .politica {
-    width: 90%; /* Una sola columna en móvil */
-  }
-
-  .contacto h3,
-  .politica h3 {
-    margin-right: 0;
-  }
-
-  .contacto ul li,
-  .politica ul li {
-    text-align: center;
-  }
-
-  footer img { /* Ajuste: Especificar footer img */
-    width: 8rem;
-    height: 8rem;
-  }
-
-  .endfooter {
-    font-size: 0.8rem;
   }
 }
