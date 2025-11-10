@@ -1,6 +1,6 @@
-TÍTULO
+PROYECTO
 <br>
-Proyecto Gernikako Arbola Frontoia del Sarea Konsulting Group
+Gernikako Arbola Frontoia del Sarea Konsulting Group
 
 DESCRIPCIÓN<br>
 El proyecto está creado por estudiantes del Bootcamp de desarrolladores fullstack de Peñascal F5 de Bilbao.
@@ -8,9 +8,6 @@ El proyecto está creado por estudiantes del Bootcamp de desarrolladores fullsta
 Fue creado para practicar nuestros conocimientos teóricos en html, css y git e implantarlos en grupo. 
 
 De esta manera, los problemas que nos hayan ido surgiendo nos han ayudado a buscar soluciones para solventarlos, comunicarnos entre nosotros para llegar a consensos en cuanto a diferentes opiniones y aprender muchísimo los unos de los otros.
-
-INSTALACIÓN Y USO<br>
-Como es una página web estática no tiene ningún tipo de instalación y su uso es como cualquier otra página web. Donde puedes ver la información pertinente.
 
 CARACTERÍSTICAS PRINCIPALES<br>
 Las características principales de la página web son:
@@ -24,7 +21,7 @@ Las características principales de la página web son:
 - El footer.
 
 TECNOLOGÍAS<br>
-Las herramientas utilizadas son los lenguajes HTML y CSS.
+Las herramientas utilizadas son los lenguajes HTML5 y CSS3.
 
 El repositorio Git/Github. 
 
