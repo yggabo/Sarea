@@ -182,7 +182,7 @@ footer {
         text-align: center;
         background-color: #004d40;
         color: white;
-        padding: 1rem;
+        padding: 2rem;
         font-size: 1.2rem;
         display: flex;
         justify-content: space-around;
@@ -193,11 +193,12 @@ footer {
   height: 15rem;
 }
 .politica {
-    width: 20%;
+    width: 300px;
+    height: 180px;
   }
 
 .politica h3 {
-    margin-right: 175px;
+    margin-right: 105px;
   }
 
 .politica ul li a {
@@ -254,7 +255,8 @@ iframe {
   header {
     flex-direction: column; /* Coloca elementos del header en columna */
     text-align: center;
-    display: flex;
+    padding: 1rem 0.5rem;
+    align-items: center;
   }
   nav ul {
     flex-direction: column;  /* Menú vertical en pantallas pequeñas */
