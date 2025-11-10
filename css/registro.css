@@ -25,6 +25,7 @@ header {
   color: white;
   text-align: left;
   padding: 0.3rem 0.5rem;
+   align-items: center;
 }
 
 header h1 {
@@ -309,7 +310,11 @@ footer {
           justify-content: center;
           align-items: center;
       
-}    
+} 
+   footer img { /* Ajuste: Especificar footer img */
+    width: 8rem;
+    height: 8rem;
+  }
  .hamburguesa {
     display: block;
   }
@@ -322,7 +327,7 @@ footer {
     align-items: center;
   }
 
-  #menu-toggle:checked + .hamburguesa + #menu {
+  #menu-cajita:checked + .hamburguesa + #menu {
     display: flex;
   }
 
@@ -353,6 +358,7 @@ footer {
 }
    
  @media only screen and (max-width: 360px) {
+  
   header {
     flex-direction: column; 
     text-align: center;
@@ -396,9 +402,7 @@ footer {
           justify-content: center;
           align-items: center;
 }
-.fs-xl {
-  font-size: 8vw;
-}
+
  .hamburguesa {
     display: block;
   }
