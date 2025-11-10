@@ -255,8 +255,7 @@ iframe {
   header {
     flex-direction: column; /* Coloca elementos del header en columna */
     text-align: center;
-    padding: 1rem 0.5rem;
-    align-items: center;
+    display: flex;
   }
   nav ul {
     flex-direction: column;  /* Menú vertical en pantallas pequeñas */
