@@ -152,47 +152,41 @@ header h2{
 /*Termina botón de subida*/
 
 
+
 footer {
-    text-align: center;
-    background-color: #004d40;
-    color: white;
-    font-size: 1.2rem;
-    display: flex;
-    padding: 1rem;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #004d40;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1.5rem;
+  text-align: center;
+  gap: 1rem;                
 }
 
-.politica {
-    width: 300px;
-    height: 180px;
-  }
 
-.politica h3 {
-    margin-right: 105px;
-  }
-
-.politica ul li a {
-        color: white;
-        text-decoration: none;
-  }
-
-.politica ul li {
-        list-style: none;
-        text-align: left;
-  }
-
-.contacto h3 {
-    margin-right: 330px;
+.contacto, .politica {
+  max-width: 300px;
 }
 
-.contacto ul li {
-    list-style: none;
-    text-align: left;
+.contacto ul, .politica ul {
+  padding: 0;
 }
 
-.contacto ul li a {
-    color: white;
+.contacto ul li, .politica ul li {
+  list-style: none;
+  text-align: left;
+  text-decoration: none;
 }
+
+.contacto h3, .politica h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
 
 .endfooter {
       background-color: #043028;
@@ -201,15 +195,23 @@ footer {
       padding: 0.3rem;
   }
 
-iframe {
-    border-radius: 5px;
 
-  }
-
-  footer img { 
-  width: 15rem;
-  height: 15rem;
+footer iframe {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  border: 0;
+  border-radius: 4px;
 }
+
+
+footer img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
 
 
  
@@ -241,7 +243,7 @@ footer {
           text-align: center;
           justify-content: center;
           align-items: center;
-          
+          text-decoration: none;
 }
 
 .politica h3{
@@ -256,8 +258,9 @@ footer {
             text-align: center;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
 }
-      .endfoot {
+      .endfooter {
           flex-direction: column;
           text-align: center;
           justify-content: center;
@@ -346,7 +349,7 @@ footer {
             align-items: center;
 }      
 
-.endfoot {
+.endfooter {
           flex-direction: column;
           text-align: center;
           justify-content: center;
