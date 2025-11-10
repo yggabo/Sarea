@@ -163,7 +163,8 @@ footer {
   font-size: 1.1rem;
   padding: 1.5rem;
   text-align: center;
-  gap: 1rem;                
+  gap: 1rem;
+  text-decoration: none;                
 }
 
 
@@ -236,7 +237,8 @@ footer {
           text-align: center;
           justify-content: center;
           align-items: center;
-     
+          text-decoration: none;
+
   }
 .politica{
           flex-direction: column;
@@ -331,6 +333,8 @@ footer {
           text-align: center;
           justify-content: center;
           align-items: center;
+          text-decoration: none;
+
      
   }
 .politica{

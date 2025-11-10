@@ -29,6 +29,7 @@ body {
 }
 .subir:hover {
    scroll-behavior: smooth;
+   transform: translateY(-3px);
 }
 
 .arrow {
@@ -102,7 +103,7 @@ header h2{
         padding-left: 1.5rem;
     }
 
-/*  MENÚ DE IDIOMAS DEL HEADER: */
+/*  MENÚ DE IDIOMAS DEL HEADER: 
 
 .languages {
   display: flex;
@@ -131,9 +132,9 @@ header h2{
   transform: scale(1.15);
   opacity: 0.8;
 }
+*/
 
-
-/* BARRA DE NAVEGACIÓN (BOTONES) */
+/* BARRA DE NAVEGACIÓN (BOTONES) 
 
  nav{
         background-color:#E3742C;
@@ -179,7 +180,9 @@ nav ul li a.activo {
         top: 6px;
         z-index: 1;
     }
-/* Menú hamburguesa*/
+    */
+
+/* Menú hamburguesa
 #menu-toggle {
   display: none;
 }
@@ -192,8 +195,8 @@ nav ul li a.activo {
   color: white;
   background-color: #E3742C;
 }
-
-/* FOOTER: */
+*/
+/* FOOTER: 
 
 footer {
         text-align: center;
@@ -239,24 +242,24 @@ footer {
       text-align: center;
       padding: 0.3rem;
   }
-footer img { /* Ajuste: Especificar footer img */
-    width: 8rem;
-    height: 8rem;
-  }
-
+  footer img { /* Ajuste: Especificar footer img para evitar afectar otras img 
+  width: 15rem;
+  height: 15rem;
+}
+*/
  @media only screen and (max-width: 834px) {
-  header {
-    flex-direction: column; /* Coloca elementos del header en columna */
+ /* header {
+    flex-direction: column; /* Coloca elementos del header en columna 
     text-align: center;
     display: flex;
-  }
-  nav ul {
-    flex-direction: column;  /* Menú vertical en pantallas pequeñas */
-  }
+  } */
+ /* nav ul {
+    flex-direction: column;  /* Menú vertical en pantallas pequeñas 
+  }*/
   .bg-container {
     padding:1.5rem;
   }
-footer {
+/*footer {
           flex-direction: column;
           text-align: center;
           justify-content: center;
@@ -290,8 +293,13 @@ footer {
       justify-content: center;
       align-items: center;
       
-}    
-.hamburguesa {
+}   
+ footer img { /* Ajuste: Especificar footer img 
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
+  } */
+/*.hamburguesa {
     display: block;
   }
 
@@ -330,9 +338,9 @@ footer {
   #menu li a.activo {
     background-color: white;
     color: #1A4210;
-  }       
+  }   */    
   .subir {
-    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    position: fixed; 
     z-index: 1000;
     bottom: 20px;
     right: 20px;
@@ -340,12 +348,12 @@ footer {
     color: white;
     padding: 10px 15px;
     border-radius: 50%;
-    text-decoration: none; /* Quita el subrayado del enlace */
+    text-decoration: none;   
     font-size: 24px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     
-}
+} 
 .subir:hover {
    scroll-behavior: smooth;
 }
@@ -358,29 +366,22 @@ footer {
 }
          
   @media only screen and (max-width: 360px) {
-  header {
+ /* header {
     flex-direction: column; 
     text-align: center;
     display: flex;
   }
   nav ul {
     flex-direction: column; 
-  }
-  .body {
-    background-image: none;
-    background-color: #1A4210;
-    background-size:cover; 
-    height: 90vh;           
-    margin: 0;                   
-    background-attachment: fixed;
-  }
+  }*/
+  
   .bg-container {
     padding:1rem;
     max-width: 300px;
     margin: 0.5rem;
     border-radius: 8px;
   }
- footer {
+ /*footer {
           flex-direction: column;
           text-align: center;
           justify-content: center;
@@ -407,10 +408,15 @@ footer {
           justify-content: center;
           align-items: center;
 }
+footer img { /* Ajuste: Especificar footer img 
+    width: 8rem;
+    height: 8rem;
+  }*/
+
 .fs-xl {
   font-size: 8vw;
 }
- .hamburguesa {
+ /*.hamburguesa {
     display: block;
   }
 
@@ -449,9 +455,9 @@ footer {
   #menu li a.activo {
     background-color: white;
     color: #1A4210;
-  }
+  }*/
   .subir {
-    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll*/
     z-index: 1000;
     bottom: 20px;
     right: 20px;
@@ -464,7 +470,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     
-}
+} 
 .subir:hover {
    scroll-behavior: smooth;
 }
