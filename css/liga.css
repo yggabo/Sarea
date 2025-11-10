@@ -397,6 +397,32 @@ iframe {
   height: 15rem;
 }
 
+/* Botón de subida*/
+.subir {
+    position: fixed; /* Se mantiene en la pantalla mientras haces scroll */
+    z-index: 1000;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 228, 196, 0.584);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.subir:hover {
+   scroll-behavior: smooth;
+}
+
+.arrow {
+  height: 1.5rem;
+  padding: 0.5px;
+  color: #E3742C;
+}
+/*Termina botón de subida*/
 
 
 
